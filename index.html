@@ -16,7 +16,7 @@
   .badge { background: #1e4060; border: 1px solid #2a6090; border-radius: 20px; padding: 2px 9px; font-size: 0.7rem; color: #5bc0f5; margin-left: 6px; }
   .badge-green { background: #0a2a14; border-color: #1a5a2a; color: #2ecc71; }
   .badge-gold  { background: #2a1e00; border-color: #5a3e00; color: #f0c040; }
-  .badge-purple { background: #1a0a2a; border-color: #3a1a5a; color: #c084fc; }
+  .badge-amber { background: #1a1200; border-color: #92400e; color: #fbbf24; }
 
   .section-label { font-size: 0.67rem; text-transform: uppercase; letter-spacing: 2px; color: #3a6a8a; padding: 14px 22px 5px; font-weight: 700; }
   .grid4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; padding: 14px 22px; }
@@ -30,18 +30,18 @@
   .card.good   { border-color: #1a6b3a; background: #0c1a10; }
   .card.info   { border-color: #1e4a70; }
   .card.gold   { border-color: #b8860b; background: #1a1608; }
-  .card.purple { border-color: #7c3aed; background: #130a20; }
+  .card.amber { border-color: #d97706; background: #1a1200; }
 
   .card-title { font-size: 0.67rem; text-transform: uppercase; letter-spacing: 1.5px; color: #5a8aaa; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
   .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-  .dr{background:#e74c3c;} .dy{background:#f1c40f;} .dg{background:#2ecc71;} .db{background:#3498db;} .dp{background:#c084fc;}
+  .dr{background:#e74c3c;} .dy{background:#f1c40f;} .dg{background:#2ecc71;} .db{background:#3498db;} .dp{background:#fbbf24;}
 
   .big  { font-size: 1.9rem; font-weight: 700; line-height: 1; }
   .med  { font-size: 1.2rem; font-weight: 700; }
   .sub  { font-size: 0.75rem; color: #7a9bb5; margin-top: 5px; }
   .sub2 { font-size: 0.72rem; color: #5a8aaa; margin-top: 3px; }
 
-  .red{color:#e74c3c;} .yellow{color:#f1c40f;} .green{color:#2ecc71;} .blue{color:#5bc0f5;} .gold{color:#f0c040;} .white{color:#fff;} .muted{color:#4a6a7a;} .purple{color:#c084fc;}
+  .red{color:#e74c3c;} .yellow{color:#f1c40f;} .green{color:#2ecc71;} .blue{color:#5bc0f5;} .gold{color:#f0c040;} .white{color:#fff;} .muted{color:#4a6a7a;} .amber{color:#fbbf24;}
 
   .bar-track { height: 8px; background: #0d1f2d; border-radius: 4px; overflow: hidden; margin: 7px 0 4px; }
   .bar-fill  { height: 100%; border-radius: 4px; }
@@ -73,7 +73,7 @@
   .tag-green  { background:#082a12; color:#2ecc71; border:1px solid #105a22; }
   .tag-blue   { background:#081828; color:#5bc0f5; border:1px solid #104060; }
   .tag-gold   { background:#2a1e00; color:#f0c040; border:1px solid #5a3e00; }
-  .tag-purple { background:#1a0a2a; color:#c084fc; border:1px solid #3a1a5a; }
+  .tag-amber { background:#1a1200; color:#fbbf24; border:1px solid #92400e; }
 
   .plist { list-style:none; }
   .plist li { display:flex; align-items:flex-start; gap:10px; padding:9px 0; border-bottom:1px solid #0d1f2d; font-size:0.79rem; line-height:1.5; }
@@ -108,9 +108,9 @@
   .route-group-header td { background:#0a1520; color:#5bc0f5; font-weight:700; font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; padding:8px 8px 4px; border-bottom:1px solid #1e3a52; }
 
   /* Charter highlight */
-  .charter-stat { background:#1a0f2a; border:1px solid #5a3a8a; border-radius:8px; padding:12px; text-align:center; }
-  .charter-big { font-size:1.6rem; font-weight:700; color:#c084fc; line-height:1; }
-  .charter-lbl { font-size:0.67rem; color:#8a6aaa; margin-top:4px; }
+  .charter-stat { background:#120e00; border:1px solid #92400e; border-radius:8px; padding:12px; text-align:center; }
+  .charter-big { font-size:1.6rem; font-weight:700; color:#fbbf24; line-height:1; }
+  .charter-lbl { font-size:0.67rem; color:#92600e; margin-top:4px; }
 
   footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; border-top:1px solid #1e3a52; margin-top:8px; }
 </style>
@@ -128,7 +128,7 @@
       <span class="badge">43 routes</span>
       <span class="badge badge-green">18 open hangars</span>
       <span class="badge badge-gold">Ubiquity Freigh (Cargo)</span>
-      <span class="badge badge-purple">Ubi Lux (Charter)</span>
+      <span class="badge badge-amber">Ubi Lux (Charter)</span>
     </div>
   </div>
   <div style="text-align:right;">
@@ -162,8 +162,8 @@
       <span class="yellow" style="font-size:0.85rem;font-weight:700;">76%</span><span></span>
 
       <span style="color:#5a8aaa;">Charter</span>
-      <div><div class="bar-track" style="margin:0;"><div class="bar-fill" style="width:70%;background:#c084fc;"></div></div></div>
-      <span class="purple" style="font-size:0.85rem;font-weight:700;">~70%</span><span></span>
+      <div><div class="bar-track" style="margin:0;"><div class="bar-fill" style="width:70%;background:#fbbf24;"></div></div></div>
+      <span class="amber" style="font-size:0.85rem;font-weight:700;">~70%</span><span></span>
     </div>
     <div class="sub2" style="margin-top:8px;">Alliance contribution: <span class="white">$16,551</span></div>
   </div>
@@ -193,13 +193,13 @@
 <!-- CHARTER HIGHLIGHT -->
 <div class="section-label">✈ Ubi Lux Charter Operations — Your $1M+/Flight Goal: Already Achieved</div>
 <div class="grid1">
-  <div class="card purple">
+  <div class="card amber">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;">
       <div>
-        <div style="font-size:0.95rem;font-weight:700;color:#c084fc;">Ubi Lux · A330-900neo · GUM→DFW</div>
-        <div style="font-size:0.75rem;color:#8a6aaa;margin-top:3px;">Charter subsidiary · Expires in 86 days · Guam→Dallas Fort Worth · 11,675km</div>
+        <div style="font-size:0.95rem;font-weight:700;color:#fbbf24;">Ubi Lux · A330-900neo · GUM→DFW</div>
+        <div style="font-size:0.75rem;color:#92600e;margin-top:3px;">Charter subsidiary · Expires in 86 days · Guam→Dallas Fort Worth · 11,675km</div>
       </div>
-      <span class="tag tag-purple" style="font-size:0.75rem;padding:4px 12px;">$1M+/FLIGHT ACHIEVED ✓</span>
+      <span class="tag tag-amber" style="font-size:0.75rem;padding:4px 12px;">$1M+/FLIGHT ACHIEVED ✓</span>
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px;">
@@ -226,22 +226,22 @@
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px;">
-      <div style="background:#0a0818;border:1px solid #3a1a5a;border-radius:7px;padding:10px;">
-        <div style="font-size:0.68rem;color:#8a6aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">vs Daily Salary</div>
-        <div style="font-size:1rem;font-weight:700;color:#c084fc;">80×</div>
-        <div style="font-size:0.7rem;color:#8a6aaa;margin-top:2px;">One charter flight = 80 days of staff salary</div>
+      <div style="background:#120e00;border:1px solid #92400e;border-radius:7px;padding:10px;">
+        <div style="font-size:0.68rem;color:#92600e;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">vs Daily Salary</div>
+        <div style="font-size:1rem;font-weight:700;color:#fbbf24;">80×</div>
+        <div style="font-size:0.7rem;color:#92600e;margin-top:2px;">One charter flight = 80 days of staff salary</div>
       </div>
-      <div style="background:#0a0818;border:1px solid #3a1a5a;border-radius:7px;padding:10px;">
-        <div style="font-size:0.68rem;color:#8a6aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">Aircraft</div>
+      <div style="background:#120e00;border:1px solid #92400e;border-radius:7px;padding:10px;">
+        <div style="font-size:0.68rem;color:#92600e;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">Aircraft</div>
         <div style="font-size:1rem;font-weight:700;color:#fff;">A330-900neo</div>
-        <div style="font-size:0.7rem;color:#8a6aaa;margin-top:2px;">205 flight hrs · 11 cycles · 0.68% wear · Maintenance planned on arrival</div>
+        <div style="font-size:0.7rem;color:#92600e;margin-top:2px;">205 flight hrs · 11 cycles · 0.68% wear · Maintenance planned on arrival</div>
       </div>
-      <div style="background:#0a0818;border:1px solid #3a1a5a;border-radius:7px;padding:10px;">
-        <div style="font-size:0.68rem;color:#8a6aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">Charter Guide</div>
-        <div style="font-size:0.78rem;color:#c084fc;line-height:1.6;">A330-900neo = profit strategy<br>A340-200 = XP farming strategy<br>Never out-fly weekly demand<br>Do A-checks before dispatch</div>
+      <div style="background:#120e00;border:1px solid #92400e;border-radius:7px;padding:10px;">
+        <div style="font-size:0.68rem;color:#92600e;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">Charter Guide</div>
+        <div style="font-size:0.78rem;color:#fbbf24;line-height:1.6;">A330-900neo = profit strategy<br>A340-200 = XP farming strategy<br>Never out-fly weekly demand<br>Do A-checks before dispatch</div>
       </div>
     </div>
-    <div style="margin-top:10px;font-size:0.72rem;color:#8a6aaa;background:#0a0818;border-radius:6px;padding:8px 10px;">
+    <div style="margin-top:10px;font-size:0.72rem;color:#92600e;background:#120e00;border-radius:6px;padding:8px 10px;">
       ⚠ <span style="color:#f1c40f;">Ubi Lux expires in 86 days</span> — renew charter license before expiry or aircraft will be grounded until renewed. Cost: 600 BP/month (covered by 24 daily ad points = 720/month).
     </div>
   </div>
@@ -343,7 +343,7 @@
   <div class="card">
     <div style="font-size:0.7rem;color:#5a8aaa;margin-bottom:10px;">Flight times calculated from route distance ÷ aircraft cruise speed. Schedule fit based on 3–4hr login window. Realism mode.</div>
     <table>
-      <thead><tr><th>Route</th><th>Aircraft</th><th>Distance</th><th>Flight Time</th><th>Schedule Fit</th><th>Seat Load Y/J/F</th><th>Notes</th></tr></thead>
+      <thead><tr><th>Route</th><th>Aircraft</th><th>Distance</th><th>Flight Time</th><th>Schedule Fit</th><th>Seat Load Y/J/F</th><th>Suggested Action</th></tr></thead>
       <tbody>
         <tr class="route-group-header"><td colspan="7">— TOO SHORT (under 2hr) — idles between logins</td></tr>
         <tr><td>ORD→DFW</td><td>DC-9-10</td><td>1,290km</td><td>1h20m</td><td><span class="tag tag-red">✗ Too short</span></td><td>28 / 9 / 19</td><td class="red">Idles ~2hrs per login cycle</td></tr>
@@ -390,12 +390,12 @@
         <tr><td>MAD→CLT</td><td>B737-800</td><td>6,598km</td><td>9h06m</td><td><span class="tag tag-blue">~ 2-login</span></td><td>19 / 25 / 30</td><td class="yellow">J-heavy — check Y demand</td></tr>
 
         <tr class="route-group-header"><td colspan="7">— ULTRA LONG HAUL (9hr+) — depart once or twice per day</td></tr>
-        <tr><td>PWE→CLT</td><td>B757-200</td><td>7,022km</td><td>8h20m</td><td><span class="tag tag-purple">Ultra long</span></td><td>44 / 14 / 29</td><td class="green">Strong Y load</td></tr>
-        <tr><td>CLT→PWE</td><td>B757-200</td><td>7,022km</td><td>8h20m</td><td><span class="tag tag-purple">Ultra long</span></td><td>16 / 21 / 37</td><td class="yellow">Low Y return leg</td></tr>
-        <tr><td>CAI→CLT</td><td>Il-96-400</td><td>9,876km</td><td>11h21m</td><td><span class="tag tag-purple">Ultra long</span></td><td><span class="yellow">16</span> / 42 / 84</td><td class="yellow">Very low Y — review config</td></tr>
-        <tr><td>LAX→BZK</td><td>Il-96-400</td><td>9,937km</td><td>11h25m</td><td><span class="tag tag-purple">Ultra long</span></td><td>65 / 36 / 77</td><td class="green">Good Y load</td></tr>
-        <tr><td>NAN→CLT</td><td>B767-200ER</td><td>12,166km</td><td>12h13m</td><td><span class="tag tag-purple">Ultra long</span></td><td>29 / 17 / 36</td><td style="color:#5a8aaa;">Reasonable for route length</td></tr>
-        <tr><td>CGK→LAX</td><td>B787-8</td><td>14,450km</td><td>17h46m</td><td><span class="tag tag-purple">Ultra long</span></td><td>25 / 29 / 40</td><td class="yellow">Low Y for 250-seat plane</td></tr>
+        <tr><td>PWE→CLT</td><td>B757-200</td><td>7,022km</td><td>8h20m</td><td><span class="tag tag-amber">Ultra long</span></td><td>44 / 14 / 29</td><td class="green">Strong Y load</td></tr>
+        <tr><td>CLT→PWE</td><td>B757-200</td><td>7,022km</td><td>8h20m</td><td><span class="tag tag-amber">Ultra long</span></td><td>16 / 21 / 37</td><td class="yellow">Low Y return leg</td></tr>
+        <tr><td>CAI→CLT</td><td>Il-96-400</td><td>9,876km</td><td>11h21m</td><td><span class="tag tag-amber">Ultra long</span></td><td><span class="yellow">16</span> / 42 / 84</td><td class="yellow">Very low Y — review config</td></tr>
+        <tr><td>LAX→BZK</td><td>Il-96-400</td><td>9,937km</td><td>11h25m</td><td><span class="tag tag-amber">Ultra long</span></td><td>65 / 36 / 77</td><td class="green">Good Y load</td></tr>
+        <tr><td>NAN→CLT</td><td>B767-200ER</td><td>12,166km</td><td>12h13m</td><td><span class="tag tag-amber">Ultra long</span></td><td>29 / 17 / 36</td><td style="color:#5a8aaa;">Reasonable for route length</td></tr>
+        <tr><td>CGK→LAX</td><td>B787-8</td><td>14,450km</td><td>17h46m</td><td><span class="tag tag-amber">Ultra long</span></td><td>25 / 29 / 40</td><td class="yellow">Low Y for 250-seat plane</td></tr>
       </tbody>
     </table>
     <div style="font-size:0.67rem;color:#3a6a8a;margin-top:8px;">* 6th ERJ route not yet identified. Distances calculated from great-circle coordinates.</div>
