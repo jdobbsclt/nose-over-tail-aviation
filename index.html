@@ -230,6 +230,49 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
 <!-- CARGO BUILD PLAN -->
 <div class="sl">📦 Goal 2 — Cargo Fleet Build Plan (Ubiquity Freigh)</div>
 <div class="g1">
+  <div class="card" style="border:2px solid #f0c040;background:#1a1608;margin-bottom:12px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+      <div style="font-size:0.82rem;font-weight:700;color:#f0c040;">📌 DO TOMORROW — 3 Reroutes (waiting on cash)</div>
+      <span class="tag tgo" style="font-size:0.7rem;padding:3px 9px;">+$2.99M/day combined</span>
+    </div>
+
+    <!-- Reroute 1: IL-96-400 PAX -->
+    <div style="background:#0a1e10;border:1px solid #2ecc71;border-radius:6px;padding:9px;margin-bottom:8px;">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+        <span style="font-size:0.72rem;font-weight:700;" class="green">🏆 #1 — IL-96-400 (PAX) · replaces CLT→CAI</span>
+        <span class="tag tg" style="font-size:0.66rem;">$1,472,317/day ⭐</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.72rem;color:#a0b8cc;">
+        <div><span class="white" style="font-weight:700;">CLT → FTE</span> (El Calafate, Argentina)<br>9,546.6 km · <span class="green">11:47:56 ✅ Tier 1</span> · DIRECT<br>Bot: <span class="gold">$route clt fte [ac] 2</span></div>
+        <div><span class="white" style="font-weight:700;">Seat config: 1Y / 69J / 99F</span><br>(F-heavy premium · = 436 seats)<br>Demand: 590Y/121J/149F<br><span class="red">⚠ Fuel $370k/day — thirsty, buy cheap</span></div>
+      </div>
+    </div>
+
+    <!-- Reroute 2: Cargo -->
+    <div style="background:#0a1520;border:1px solid #1e3a52;border-radius:6px;padding:9px;margin-top:8px;">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+        <span style="font-size:0.72rem;font-weight:700;" class="blue">📦 Cargo · replaces DFW→CAY</span>
+        <span class="tag tb" style="font-size:0.66rem;">$908,566/day</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.72rem;color:#a0b8cc;">
+        <div><span class="white" style="font-weight:700;">DFW → AKN → HIJ</span> (King Salmon → Hiroshima)<br>10,894.5 km · <span class="green">11:45:31 ✅ Tier 1</span> · stopover<br>Bot: <span class="gold">$route dfw hij [ac] 2</span> (via AKN)</div>
+        <div><span class="white" style="font-weight:700;">Cargo config: 100 Large / 0 Heavy</span><br>Demand: 279k Large / 192k Heavy<br><span class="red">⚠ A-check $309k + fuel $517k/day</span><br><span class="red">Run only when fuel is cheap</span></div>
+      </div>
+    </div>
+
+    <!-- Reroute 3: A320-200 PAX -->
+    <div style="background:#0a1520;border:1px solid #1e3a52;border-radius:6px;padding:9px;margin-top:8px;">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+        <span style="font-size:0.72rem;font-weight:700;" class="green">✈ A320-200 (PAX) · replaces CLT→SCC (fixes 0Y bug)</span>
+        <span class="tag tg" style="font-size:0.66rem;">$609,315/day</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.72rem;color:#a0b8cc;">
+        <div><span class="white" style="font-weight:700;">CLT → SCC → JMU</span> (Deadhorse → Jiamusi, China)<br>10,378.5 km · <span class="green">11:47:08 ✅ Tier 1</span> · stopover<br>Bot: <span class="gold">$route clt jmu [ac] 2</span> (via SCC)</div>
+        <div><span class="white" style="font-weight:700;">Seat config: 41Y / 54J / 5F</span><br>(= 164 seats · fixes the 0Y bug)<br>Demand: 544Y/489J/46F<br><span class="green">✓ Cheap to run · margin 130.8 (2nd best)</span></div>
+      </div>
+      <div style="margin-top:5px;font-size:0.68rem;color:#92600e;">One-time route + config fee pays back in under a day. Moves A320-200 from Sell → Keep.</div>
+    </div>
+  </div>
   <div class="pc">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
       <div>
@@ -338,8 +381,8 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
       <tbody>
         <tr><td class="green"><strong>B787-8 ×2</strong></td><td>~11:59 natural</td><td><span class="tag tg">Tier 1 ✓</span></td><td class="green">None needed</td><td class="green">LHR→DAD confirmed. Run bot CLT/DFW/LAX ~9,800km</td></tr>
         <tr><td class="yellow"><strong>Il-96-400 ×2</strong></td><td>11h21–25m</td><td><span class="tag tg">Tier 1</span></td><td class="yellow">Minor CI → 11:50</td><td style="color:#5a8aaa;">Small adjustment only</td></tr>
-        <tr><td class="yellow"><strong>DC-10-10 ×3</strong></td><td>6h18m–7h03m</td><td><span class="tag tb">Tier 2 / 1</span></td><td class="yellow">2× CI → 5:55</td><td class="green">1× now Tier 1 on CLT→FRO→ZAH stopover ($962k/day)</td></tr>
-        <tr><td class="yellow"><strong>B757-200 ×2</strong></td><td>7h57m–8h20m</td><td><span class="tag tb">Tier 2</span></td><td class="yellow">Reduce CI → 5:55</td><td style="color:#5a8aaa;">Significant slowdown needed</td></tr>
+        <tr><td class="green"><strong>DC-10-10 ×3</strong></td><td>11h41–45m</td><td><span class="tag tg">Tier 1 ✓</span></td><td class="green">None — all natural</td><td class="green">ALL 3 now Tier 1 stopover earners (~$960k/day each = $2.88M/day)</td></tr>
+        <tr><td class="yellow"><strong>B757-200 ×2</strong></td><td>7h57m / 11h44m</td><td><span class="tag tb">Tier 2 / 1</span></td><td class="yellow">1× CI → 5:55</td><td class="green">1× now Tier 1 on CLT→XFW→OSM stopover ($716k/day)</td></tr>
         <tr><td class="yellow"><strong>A300B2-200 ×1</strong></td><td>5h47m</td><td><span class="tag tb">Tier 2</span></td><td class="yellow">Minor CI → 5:55</td><td style="color:#5a8aaa;">Almost there already</td></tr>
         <tr><td class="yellow"><strong>MC-21-400 ×5</strong></td><td>3h24m</td><td><span class="tag tb">Tier 3</span></td><td class="yellow">Reduce CI → 3:55</td><td style="color:#5a8aaa;">All 5 same adjustment</td></tr>
         <tr><td class="yellow"><strong>A400M ×2</strong></td><td>4h02–09m</td><td><span class="tag tb">Tier 3</span></td><td class="yellow">Reduce CI → 3:55</td><td class="yellow">Phase-out candidate — keep flying</td></tr>
@@ -381,16 +424,15 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>LAX→CLT</td><td>Caravelle 12</td><td>3,413km</td><td>4h16m</td><td><span class="tag tg">✓ Tier 3</span></td><td>16/16/21</td><td class="red">Sell — phase-out priority</td></tr>
         <tr><td>CLT→GEO</td><td>CRJ 900LR</td><td>3,946km</td><td>4h32m</td><td><span class="tag tg">✓ Tier 3</span></td><td>15/5/17</td><td class="red">Sell — phase-out priority</td></tr>
         <tr class="rgh"><td colspan="7">— LONG HAUL — Tier 2 (2× per 12hr window)</td></tr>
-        <tr><td>LHR→ADD</td><td>DC-10-10</td><td>5,920km</td><td>6h31m</td><td><span class="tag tb">Tier 2</span></td><td>26/28/42</td><td class="green">CI → 5:55 · Keep</td></tr>
-        <tr><td>SFG→LAX</td><td>DC-10-10</td><td>5,731km</td><td>6h18m</td><td><span class="tag tb">Tier 2</span></td><td>26/28/42</td><td class="green">CI → 5:55 · Keep</td></tr>
+        <tr style="background:#0a1e10;"><td class="green">LHR→MZR→BDO</td><td class="green"><strong>DC-10-10</strong></td><td>11,852km</td><td>11h45m</td><td><span class="tag tg">✅ Tier 1</span></td><td>99/50/17</td><td class="green">⭐ REROUTED stopover · $962k/day/AC · top margin (149.3)</td></tr>
+        <tr style="background:#0a1e10;"><td class="green">LAX→JEG→ECN</td><td class="green"><strong>DC-10-10</strong></td><td>11,798km</td><td>11h42m</td><td><span class="tag tg">✅ Tier 1</span></td><td>98/43/22</td><td class="green">⭐ REROUTED stopover · $958k/day/AC · best margin (148.7)</td></tr>
         <tr style="background:#0a1e10;"><td class="green">CLT→FRO→ZAH</td><td class="green"><strong>DC-10-10</strong></td><td>11,786km</td><td>11h41m</td><td><span class="tag tg">✅ Tier 1</span></td><td>1/90/23</td><td class="green">⭐ REROUTED stopover · $962k/day/AC · beats B787-8!</td></tr>
-        <tr><td>CLT→SCC</td><td>A320-200</td><td>6,092km</td><td>6h54m</td><td><span class="tag tb">Tier 2</span></td><td><span class="red">0</span>/32/25</td><td class="red">⚠ Zero Y seats — reconfigure · Sell medium term</td></tr>
+        <tr><td>CLT→SCC</td><td>A320-200</td><td>6,092km</td><td>6h54m</td><td><span class="tag tb">Tier 2</span></td><td><span class="red">0</span>/32/25</td><td class="yellow">⚠ 0Y bug · reroute to CLT→SCC→JMU pending (see DO TOMORROW)</td></tr>
         <tr><td>CLT→KEF</td><td>A300B2-200</td><td>5,011km</td><td>5h47m</td><td><span class="tag tb">Tier 2</span></td><td>26/27/43</td><td class="green">Minor CI → 5:55 · Keep</td></tr>
         <tr><td>MAD→IKA</td><td>CL-44D</td><td>4,754km</td><td>6h47m</td><td><span class="tag tb">Tier 2</span></td><td>17/9/32</td><td class="red">Sell — phase-out priority</td></tr>
         <tr><td>CLT→CDG</td><td>B757-200</td><td>6,701km</td><td>7h57m</td><td><span class="tag tb">Tier 2</span></td><td>24/16/39</td><td class="green">CI → 5:55 · Keep</td></tr>
-        <tr><td>PWE→CLT</td><td>B757-200</td><td>7,022km</td><td>8h20m</td><td><span class="tag tb">Tier 2</span></td><td>44/14/29</td><td class="green">CI → 5:55 · Keep</td></tr>
-        <tr><td>CLT→PWE</td><td>B757-200</td><td>7,022km</td><td>8h20m</td><td><span class="tag tb">Tier 2</span></td><td>16/21/37</td><td class="green">CI → 5:55 · Keep</td></tr>
-        <tr><td>MAD→CLT</td><td>B737-800</td><td>6,598km</td><td>9h06m</td><td><span class="tag tb">Tier 2</span></td><td>19/25/30</td><td class="yellow">CI → 5:55 · Sell medium term</td></tr>
+        <tr style="background:#0a1e10;"><td class="green">CLT→XFW→OSM</td><td class="green"><strong>B757-200</strong></td><td>10,183km</td><td>11h44m</td><td><span class="tag tg">✅ Tier 1</span></td><td>0/61/26</td><td class="green">⭐ REROUTED stopover · $716k/day/AC · Tier 1 fit</td></tr>
+        <tr style="background:#0a1e10;"><td class="green">CLT→BJL→ABJ</td><td class="green"><strong>B737-800</strong></td><td>8,492km</td><td>11h42m</td><td><span class="tag tg">✅ Tier 1</span></td><td>53/34/21</td><td class="green">⭐ REROUTED stopover · $663k/day/AC · best margin (71.3)</td></tr>
         <tr><td>CAY→DFW</td><td>B757-200F</td><td>5,578km</td><td>6h37m</td><td><span class="tag tb">Tier 2</span></td><td>68,000 lbs</td><td class="yellow">CI → 5:55 · Keep until A330-200F</td></tr>
         <tr class="rgh"><td colspan="7">— ULTRA LONG HAUL — Tier 1 (1× per 12hr window)</td></tr>
         <tr><td>CAI→CLT</td><td>Il-96-400</td><td>9,876km</td><td>11h21m</td><td><span class="tag tg">✓ Tier 1</span></td><td><span class="yellow">16</span>/42/84</td><td class="yellow">Minor CI → 11:50 · Check Y seat config</td></tr>
@@ -425,9 +467,8 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <div style="font-size:0.67rem;color:#f1c40f;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;">🟡 Sell Second — Medium Term</div>
         <div style="font-size:0.74rem;color:#b0c8d8;line-height:2.0;">
           <div class="yellow">ERJ 190-200 ×6 <span style="color:#5a8aaa;font-size:0.67rem;">2.6hr, too short</span></div>
-          <div class="yellow">A320-200 ×1 <span style="color:#5a8aaa;font-size:0.67rem;">0Y route, awkward fit</span></div>
+          <div class="yellow">A320-200 ×1 <span style="color:#f0c040;font-size:0.67rem;">reroute pending → then KEEP</span></div>
           <div class="yellow">MD-88 ×1 <span style="color:#5a8aaa;font-size:0.67rem;">4.2hr, doesn't fit</span></div>
-          <div class="yellow">B737-800 ×1 <span style="color:#5a8aaa;font-size:0.67rem;">9hr, awkward fit</span></div>
           <div class="yellow">B767-200ER ×1 <span style="color:#5a8aaa;font-size:0.67rem;">PFE 13.73, outclassed</span></div>
         </div>
         <div style="font-size:0.68rem;color:#5a8aaa;margin-top:6px;">Keep flying — every $ counts toward B787-8 #3</div>
@@ -436,18 +477,27 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <div style="font-size:0.67rem;color:#2ecc71;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;">🟢 Keep Long-Term</div>
         <div style="font-size:0.74rem;color:#b0c8d8;line-height:2.0;">
           <div class="green">MC-21-400 ×5 <span style="color:#5a8aaa;font-size:0.67rem;">CI→3:55, Tier 3</span></div>
-          <div class="green">DC-10-10 ×3 <span style="color:#f0c040;font-size:0.67rem;">⭐ 1× CLT→FRO→ZAH $962k/day · 2× Tier 2</span></div>
-          <div class="green">B757-200 ×2 <span style="color:#5a8aaa;font-size:0.67rem;">CI→5:55, Tier 2</span></div>
+          <div class="green">DC-10-10 ×3 <span style="color:#f0c040;font-size:0.67rem;">⭐ ALL 3 Tier 1 stopover ~$960k/day each ($2.88M/day)</span></div>
+          <div class="green">B757-200 ×2 <span style="color:#f0c040;font-size:0.67rem;">⭐ 1× CLT→XFW→OSM $716k/day · 1× Tier 2</span></div>
           <div class="green">Il-96-400 ×2 <span style="color:#5a8aaa;font-size:0.67rem;">natural Tier 1</span></div>
           <div class="green">A300B2-200 ×1 <span style="color:#5a8aaa;font-size:0.67rem;">CI→5:55, Tier 2</span></div>
+          <div class="green">B737-800 ×1 <span style="color:#f0c040;font-size:0.67rem;">⭐ CLT→BJL→ABJ $663k/day, best margin</span></div>
           <div class="green">B787-8 ×2+ <span style="color:#2ecc71;font-size:0.67rem;">growing fleet ✈</span></div>
         </div>
       </div>
     </div>
     <div style="margin-top:8px;font-size:0.69rem;color:#5a8aaa;">Use bot to check resale value before selling · Sell in batches to free hangars as premium planes arrive · Keep all planes flying until sold — revenue matters</div>
     <div style="margin-top:10px;background:#0a1e10;border:1px solid #2ecc71;border-radius:8px;padding:11px;">
-      <div style="font-size:0.68rem;color:#2ecc71;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">⭐ Stopover Strategy Win — DC-10-10</div>
-      <div style="font-size:0.73rem;color:#a0b8cc;line-height:1.6;">A DC-10-10 (previously on CLT→LHR, now removed) was rerouted to <span class="green" style="font-weight:700;">CLT→FRO→ZAH</span> (Charlotte → Florø → Zahedan), an <span class="white">11,786km stopover route</span> at 11h41m. With a premium config (1Y/90J/23F) it now earns <span class="gold" style="font-weight:700;">$962,334/day/AC</span> — beating even the B787-8 on LHR→DAD ($924k/day). <span class="yellow">Key lesson:</span> the stopover strategy lets a mid-range plane you already own fly an ultra-long premium route. Worth testing on MC-21-400 and the other 2 DC-10-10s before phasing anything out.</div>
+      <div style="font-size:0.68rem;color:#2ecc71;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">⭐ Stopover Strategy — Proven Across Multiple Planes</div>
+      <div style="font-size:0.73rem;color:#a0b8cc;line-height:1.6;">Rerouting planes you already own onto long premium <span class="white">routes</span> (direct or stopover) with premium configs is your single biggest profit driver. <span class="gold" style="font-weight:700;">8 rerouted planes now earn ~$7.25M/day combined</span> — almost all from aircraft you already owned, no capital spent:
+      <br>• <span class="green" style="font-weight:700;">Il-96-400 → CLT→FTE</span> (9,547km, 11:47, direct) — <span class="gold">$1,472k/day</span> 🏆 (pending)
+      <br>• <span class="green" style="font-weight:700;">DC-10-10 ×3</span> (FRO→ZAH, MZR→BDO, JEG→ECN) — <span class="gold">~$960k/day each</span>
+      <br>• <span class="green" style="font-weight:700;">B787-8 → LHR→DAD</span> (9,850km, 11:59) — <span class="gold">$924k/day</span>
+      <br>• <span class="green" style="font-weight:700;">Cargo → DFW→AKN→HIJ</span> (10,895km, 11:45) — <span class="gold">$909k/day</span> (pending)
+      <br>• <span class="green" style="font-weight:700;">B757-200 → CLT→XFW→OSM</span> (10,183km, 11:44) — <span class="gold">$716k/day</span>
+      <br>• <span class="green" style="font-weight:700;">B737-800 → CLT→BJL→ABJ</span> (8,492km, 11:42) — <span class="gold">$663k/day</span>
+      <br>• <span class="yellow">A300B2 → CLT→CUM→GYN</span> (6,666km, 7:42) — $615k/day but <span class="red">drifts</span> (needs a longer route)
+      <br><span class="yellow">Pending reroutes (see DO TOMORROW):</span> Il-96-400 CLT→FTE, Cargo DFW→AKN→HIJ, and A320-200 CLT→SCC→JMU ($609k/day, fixes 0Y bug). A300B2 still needs a ~11,000km stopover to stop drifting.</div>
     </div>
   </div>
 </div>
@@ -548,7 +598,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
       <li><div class="pnum p4">4</div><div><strong class="yellow">Reduce Ubi Lux CI to 100 immediately</strong> — saves ~$177k/week with zero revenue impact. Charter revenue is fixed upfront — CI only affects fuel cost. Re-check after every A-check as CI resets to 200.</div></li>
       <li><div class="pnum p5">5</div><div><strong class="green">Save $6.55M → B787-8 #3 (~1.5 weeks)</strong> — confirmed $924k/day per plane. Run bot to find ~9,800km route from CLT, DFW, or LAX before purchase. Free up a hangar slot first by selling a DC-9-10.</div></li>
       <li><div class="pnum p6">6</div><div><strong class="green">Buy ICN hub (20 BP)</strong> — 1,257 BP available, well above the 20 BP needed. Unlocks 3 unique 12hr B787-8 routes (ADD, AKL, NBO). ICN replaces SIN — SIN had zero unique 12hr routes.</div></li>
-      <li><div class="pnum p7">7</div><div><strong class="green">Apply CI adjustments to current fleet</strong> — MC-21-400 ×5: reduce CI to hit 3:55. DC-10-10: 2× on Tier 2 (CI to 5:55), 1× now on CLT→FRO→ZAH stopover (Tier 1, natural fit). B757-200 ×2: CI to 5:55. Il-96-400 ×2 + A300B2: minor tune. Stay just under hour boundaries.</div></li>
+      <li><div class="pnum p7">7</div><div><strong class="green">Apply CI adjustments to current fleet</strong> — MC-21-400 ×5: reduce CI to hit 3:55. DC-10-10 ×3: all now Tier 1 stopover (no CI needed). B757-200: 1× Tier 2 (CI to 5:55), 1× Tier 1 stopover. Il-96-400 ×2 + A300B2: minor tune. Stay just under hour boundaries.</div></li>
       <li><div class="pnum p8">8</div><div><strong class="green">Sell phase-out planes gradually</strong> — DC-9-10 ×1 (last one, on CLT→HGR), BAe 146-300, Caravelle 12 ×2, CL-44D, CRJ 900LR are priority. Use bot for resale values. Sell when you need hangar space for new premium planes.</div></li>
       <li><div class="pnum p9">9</div><div><strong class="green">Watch fuel — currently $1,460</strong> — don't buy. Drop below $1,000 → buy aggressively. Drop below $500 → max out tank. Updates every ~15 minutes.</div></li>
       <li><div class="pnum p10">10</div><div><strong class="green">Monitor staff morale</strong> — Engineers 79%, Technicians 78% still below 80% threshold. Issue salary raises if either drops further. Pilots 87% and Crew 85% are fine.</div></li>
