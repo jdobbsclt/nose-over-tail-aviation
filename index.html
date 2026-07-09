@@ -120,13 +120,11 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
     <div class="hm">Base: CLT &nbsp;·&nbsp; Hubs: DFW · LAX · LHR &nbsp;·&nbsp; 5th Hub Target: ICN
       <span class="badge bgo">Freefall Cargo</span>
       <span class="badge ba">Vertigo Air</span>
-      <span class="badge by">Rep recovering ↑</span>
     </div>
   </div>
   <div style="text-align:right;">
     <div style="font-size:0.7rem;color:#5a8aaa;">Last updated</div>
-    <div style="font-size:0.9rem;color:#5bc0f5;font-weight:600;">July 6, 2026</div>
-    <div style="font-size:0.7rem;color:#2ecc71;margin-top:2px;">3× B787-8 purchased ✓</div>
+    <div style="font-size:0.9rem;color:#5bc0f5;font-weight:600;">July 8, 2026</div>
   </div>
 </header>
 
@@ -142,7 +140,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
 </div>
 
 <!-- KPIs -->
-<div class="g3" style="padding-top:14px;">
+<div class="g4" style="padding-top:14px;">
   <div class="card warn">
     <div class="ct"><span class="dot dy"></span>Reputation — Recovering ↑</div>
     <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:center;font-size:0.76rem;">
@@ -158,30 +156,46 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
 
   <div class="card warn">
     <div class="ct" style="margin-bottom:8px;"><span class="dot dy"></span>Fuel & CO₂ Thresholds</div>
-    <div style="font-size:0.64rem;color:#5a8aaa;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">⛽ Fuel <span style="color:#3a5a72;">· per 1,000 lbs</span></div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;text-align:center;font-size:0.72rem;margin-bottom:10px;">
-      <div style="background:#082a12;border:1px solid #1a5a2a;border-radius:5px;padding:5px 3px;"><div class="green" style="font-weight:700;">≤$500</div><div style="font-size:0.6rem;color:#2ecc71;">Max out</div></div>
-      <div style="background:#1a1608;border:1px solid #5a4000;border-radius:5px;padding:5px 3px;"><div class="yellow" style="font-weight:700;">≤$1k</div><div style="font-size:0.6rem;color:#f1c40f;">Buy</div></div>
-      <div style="background:#1a1010;border:1px solid #5a1010;border-radius:5px;padding:5px 3px;"><div class="red" style="font-weight:700;">&gt;$1k</div><div style="font-size:0.6rem;color:#e74c3c;">Hold</div></div>
+    <div style="font-size:0.64rem;color:#5a8aaa;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">⛽ Fuel <span style="color:#3a5a72;">· per 1,000 lbs</span></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+      <span style="background:#082a12;border:1px solid #1a5a2a;border-radius:20px;padding:7px 16px;font-size:0.82rem;color:#2ecc71;font-weight:600;">≤$500 Max out</span>
+      <span style="background:#1a1608;border:1px solid #5a4000;border-radius:20px;padding:7px 16px;font-size:0.82rem;color:#f1c40f;font-weight:600;">≤$1k Buy</span>
+      <span style="background:#1a1010;border:1px solid #5a1010;border-radius:20px;padding:7px 16px;font-size:0.82rem;color:#e74c3c;font-weight:600;">&gt;$1k Hold</span>
     </div>
-    <div style="font-size:0.64rem;color:#5a8aaa;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">🌿 CO₂ <span style="color:#3a5a72;">· per 1,000 quotas</span></div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;text-align:center;font-size:0.72rem;">
-      <div style="background:#082a12;border:1px solid #1a5a2a;border-radius:5px;padding:5px 3px;"><div class="green" style="font-weight:700;">≤$120</div><div style="font-size:0.6rem;color:#2ecc71;">Buy</div></div>
-      <div style="background:#1a1608;border:1px solid #5a4000;border-radius:5px;padding:5px 3px;"><div class="yellow" style="font-weight:700;">≤$150</div><div style="font-size:0.6rem;color:#f1c40f;">OK</div></div>
-      <div style="background:#1a1010;border:1px solid #5a1010;border-radius:5px;padding:5px 3px;"><div class="red" style="font-weight:700;">Neg</div><div style="font-size:0.6rem;color:#e74c3c;">Rep-10%</div></div>
+    <div style="font-size:0.64rem;color:#5a8aaa;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">🌿 CO₂ <span style="color:#3a5a72;">· per 1,000 quotas</span></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <span style="background:#082a12;border:1px solid #1a5a2a;border-radius:20px;padding:7px 16px;font-size:0.82rem;color:#2ecc71;font-weight:600;">≤$120 Buy</span>
+      <span style="background:#1a1608;border:1px solid #5a4000;border-radius:20px;padding:7px 16px;font-size:0.82rem;color:#f1c40f;font-weight:600;">≤$150 OK</span>
+      <span style="background:#1a1010;border:1px solid #5a1010;border-radius:20px;padding:7px 16px;font-size:0.82rem;color:#e74c3c;font-weight:600;">Neg Rep-10%</span>
     </div>
-    <div style="margin-top:7px;font-size:0.66rem;color:#5a8aaa;">Updates ~15min · Eco-Friendly ✓</div>
+    <div style="margin-top:9px;font-size:0.66rem;color:#5a8aaa;">Updates ~15min · Eco-Friendly ✓</div>
   </div>
 
   <div class="card info">
     <div class="ct"><span class="dot db"></span>Cash & Fleet</div>
     <div class="big blue">$36.8M</div>
-    <div class="sub">available cash</div>
+    <div class="sub">available cash (pre Il-96 #3 purchase)</div>
     <div style="margin-top:8px;background:#0a1828;border:1px solid #1e4060;border-radius:6px;padding:7px;font-size:0.71rem;">
-      <span class="yellow">B787-8 ×3 done — saving for B787-10</span><br>
-      <span style="color:#5a8aaa;">50.5% funded, need $36.0M more</span>
+      <span class="yellow">Il-96-400 #3 done — saving for #4</span><br>
+      <span style="color:#5a8aaa;">$40.4M each · cash TBD after #3 purchase</span>
     </div>
     <div class="sub2" style="margin-top:6px;">BP: <span class="white">3,281</span> &nbsp;·&nbsp; Share: <span class="green">↑$21.41</span></div>
+  </div>
+
+  <div class="card gold">
+    <div class="ct" style="margin-bottom:8px;"><span class="dot dy"></span>Hubs & Lounges</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <span style="background:#082a12;border:1px solid #1a5a2a;border-radius:20px;padding:7px 14px;font-size:0.8rem;color:#2ecc71;font-weight:600;">CLT · 14✈ · 🛋✓</span>
+      <span style="background:#082a12;border:1px solid #1a5a2a;border-radius:20px;padding:7px 14px;font-size:0.8rem;color:#2ecc71;font-weight:600;">DFW · 5✈ · 🛋—</span>
+      <span style="background:#082a12;border:1px solid #1a5a2a;border-radius:20px;padding:7px 14px;font-size:0.8rem;color:#2ecc71;font-weight:600;">LAX · 9✈ · 🛋—</span>
+      <span style="background:#082a12;border:1px solid #1a5a2a;border-radius:20px;padding:7px 14px;font-size:0.8rem;color:#2ecc71;font-weight:600;">LHR · 7✈ · 🛋—</span>
+      <span style="background:#1a1608;border:1px solid #5a4000;border-radius:20px;padding:7px 14px;font-size:0.8rem;color:#f1c40f;font-weight:600;">ICN · Buy 20BP</span>
+    </div>
+    <div style="margin-top:9px;font-size:0.66rem;color:#5a8aaa;">🛋 = lounge (+50 J-class/hub) · ✈ = PAX+Cargo+Charter planes based</div>
+    <div style="margin-top:9px;padding-top:9px;border-top:1px solid #2a2410;font-size:0.68rem;color:#a0b8cc;">
+      <span class="gold" style="font-weight:600;">ICN unlocks:</span>
+      <span class="green">→ADD</span> 11h18m &nbsp;·&nbsp; <span class="green">→AKL</span> 11h52m✅ &nbsp;·&nbsp; <span class="green">→NBO</span> 12h21m
+    </div>
   </div>
 </div>
 
@@ -426,16 +440,9 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
 </div>
 
 <!-- 5TH HUB -->
-<div class="sl">🌍 Hubs & Lounges</div>
+<div class="sl">🌍 ICN Hub Opportunity</div>
 <div class="g1">
   <div class="card gold">
-    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:11px;">
-      <div class="hub-item active"><div class="hub-code green">CLT</div><div style="font-size:0.63rem;color:#5a8aaa;">Base</div><div style="font-size:0.63rem;color:#2ecc71;">🛋 Lounge ✓</div><div style="font-size:0.63rem;color:#f0c040;margin-top:3px;line-height:1.5;">✈13 PAX<br>📦1 Cargo · 🛩0 Chtr</div></div>
-      <div class="hub-item active"><div class="hub-code green">DFW</div><div style="font-size:0.63rem;color:#5a8aaa;">Hub ✓</div><div style="font-size:0.63rem;color:#5a8aaa;">🛋 pending</div><div style="font-size:0.63rem;color:#f0c040;margin-top:3px;line-height:1.5;">✈3 PAX<br>📦1 Cargo · 🛩0 Chtr</div></div>
-      <div class="hub-item active"><div class="hub-code green">LAX</div><div style="font-size:0.63rem;color:#5a8aaa;">Hub ✓</div><div style="font-size:0.63rem;color:#5a8aaa;">🛋 pending</div><div style="font-size:0.63rem;color:#f0c040;margin-top:3px;line-height:1.5;">✈9 PAX<br>📦0 Cargo · 🛩1 Chtr</div></div>
-      <div class="hub-item active"><div class="hub-code green">LHR</div><div style="font-size:0.63rem;color:#5a8aaa;">Hub ✓</div><div style="font-size:0.63rem;color:#5a8aaa;">🛋 pending</div><div style="font-size:0.63rem;color:#f0c040;margin-top:3px;line-height:1.5;">✈6 PAX<br>📦1 Cargo · 🛩0 Chtr</div></div>
-      <div class="hub-item new"><div class="hub-code gold">ICN</div><div style="font-size:0.63rem;color:#f0c040;">→ BUY 20BP</div><div style="font-size:0.63rem;color:#5a8aaa;">🛋 —</div><div style="font-size:0.66rem;color:#5a8aaa;margin-top:2px;">✈ —</div></div>
-    </div>
     <div style="font-size:0.71rem;color:#5a8aaa;margin-bottom:10px;">Lounges add +50 J-class demand per hub. ICN (★★★★★) replaces SIN — 3 unique 12hr routes (SIN had 0) · 20 BP of 3,281 available ✅</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:0.71rem;">
       <div style="background:#0a1520;border-radius:6px;padding:9px;">
@@ -476,6 +483,6 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
   </div>
 </div>
 
-<footer>Nose Over Tail Aviation Command Center · SKY HUB Alliance · Vertigo Air Charter · Build: 3×B787-8✓ → B787-10×2 → B747-8 → A380 · Cargo: A330-200F → B747-8F · 5th Hub: ICN · Updated July 6, 2026 · jdobbsclt.github.io/ubiquity-air</footer>
+<footer>Nose Over Tail Aviation Command Center · SKY HUB Alliance · Vertigo Air Charter · Build: 3×B787-8✓ → B787-10×2 → B747-8 → A380 · Cargo: A330-200F → B747-8F · 5th Hub: ICN · Updated July 8, 2026 · jdobbsclt.github.io/ubiquity-air</footer>
 </body>
 </html>
