@@ -328,95 +328,62 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
   </div>
 </div>
 
-<!-- VERIFIED FLIGHT DATA -->
-<div class="sl">🔬 Verified Flight History — Real Revenue per Leg (Jul 12)</div>
-<div class="g1">
-  <div class="card good">
-    <table>
-      <thead><tr><th>Tail</th><th>Aircraft</th><th>Route</th><th>Typical Leg</th><th>×2 legs/day</th><th>Bot said</th><th>Verdict</th></tr></thead>
-      <tbody>
-        <tr><td>N-030</td><td>Il-96-400</td><td>CLT→ABS</td><td class="gold">$1.05–1.16M</td><td class="green">~$2.2M</td><td class="muted">$1,613k</td><td class="green">beats bot</td></tr>
-        <tr><td>N-031</td><td>Il-96-400</td><td>LAX→URA</td><td class="gold">$0.88–1.14M</td><td class="green">~$2.1M</td><td class="muted">$1,613k</td><td class="green">beats bot</td></tr>
-        <tr><td>N-058</td><td>Il-96-400</td><td>LAX→INI</td><td class="gold">$0.94–1.19M</td><td class="green">~$2.2M</td><td class="muted">$1,613k</td><td class="green">beats bot</td></tr>
-        <tr><td>N-025</td><td>DC-10-10</td><td>CLT→ZAH</td><td class="gold">$720–785k</td><td class="green">~$1.5M</td><td class="muted">$962k</td><td class="green">beats bot</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- STAFF -->
-<div class="sl">👷 Staff & Morale</div>
-<div class="g1">
-  <div class="card warn">
-    <table>
-      <thead><tr><th>Role</th><th>Count</th><th>Salary/ea</th><th>Daily Cost</th><th>Morale</th><th>Action</th></tr></thead>
-      <tbody>
-        <tr><td class="white">Pilots</td><td>97</td><td>$200</td><td>$19,400</td><td class="green">80%</td><td class="green">OK — hold</td></tr>
-        <tr><td class="white">Crew</td><td>280</td><td>$180</td><td>$50,400</td><td class="yellow">69%</td><td class="yellow">6% raise</td></tr>
-        <tr><td class="white">Engineers</td><td>104</td><td>$298</td><td>$30,992</td><td class="yellow">70%</td><td class="yellow">6% raise</td></tr>
-        <tr><td class="white">Technicians</td><td>158</td><td>$254</td><td>$40,132</td><td class="yellow">68%</td><td class="yellow">6% raise</td></tr>
-        <tr style="background:#0a1520;"><td colspan="3" class="blue"><strong>TOTAL</strong></td><td class="gold"><strong>$140,924/day</strong></td><td colspan="2" style="color:#5a8aaa;">Training points: 1</td></tr>
-      </tbody>
-    </table>
-    <div style="margin-top:8px;font-size:0.7rem;color:#a0b8cc;">💡 <strong class="green">Raises are nearly free.</strong> Total staff cost is ~1.2% of fleet income. A 6% raise across Crew/Engineers/Technicians adds ~<strong>$7,300/day</strong> — 0.06% of income — and lifts morale, which feeds service quality and reputation. Pilots at 80% are fine; leave them.</div>
-  </div>
-</div>
-
 <!-- FULL ROUTE TABLE -->
 <div class="sl">📊 Full Fleet & Route Assessment — with Tail Numbers</div>
 <div class="g1">
   <div class="card">
     <div style="background:#12100a;border:1px solid #f0c040;border-radius:7px;padding:9px;margin-bottom:10px;font-size:0.71rem;color:#a0b8cc;line-height:1.5;">
-      ⚠ <span class="gold" style="font-weight:700;">Bot figures model 1 trip/day — you fly 2 legs/day.</span> Real flight history (Jul 12) shows the bot's "$/day" is really "$/leg at ~99% fill." Your legs book below that, but you get <em>two</em> of them — so real daily profit runs <span class="green">above</span> the bot number. Verified: Il-96 ~$1.09M/leg → ~$2.18M/day income (bot said $1,613k). DC-10 ~$745k/leg → ~$1.49M/day (bot said $962k). Use bot figures for <span class="blue">ranking aircraft</span>, not for absolute daily earnings.
+      ⚠ <span class="gold" style="font-weight:700;">Bot figures model 1 trip/day — you fly 2 legs/day.</span> "Real $/leg" and "Real $/day" columns are measured from actual flight logs (Jul 12) for 22 tails; remaining planes of the same type use that type's average. Every type tested clears its bot number after costs. Use bot figures for <span class="blue">ranking aircraft</span>, not for absolute daily earnings — the ranking is roughly reliable at the extremes (Il-96 best, ERJ worst) but reshuffles in the crowded $800–950k band (see B767-200ER, which the bot underranks).</div>
+    <div style="background:#0a1520;border:1px solid #1e3a52;border-radius:7px;padding:8px;margin-bottom:10px;font-size:0.68rem;color:#7a9bb5;">📐 Cargo demand formula confirmed: <strong class="gold">Large = 500 × Y</strong> · <strong class="gold">Heavy = 1,000 × J</strong>.
     </div>
     <table>
-      <thead><tr><th>Tail</th><th>Route</th><th>Aircraft</th><th>Flight Time</th><th>Fit</th><th>Ceiling $/day</th><th>Notes</th></tr></thead>
+      <thead><tr><th>Tail</th><th>Route</th><th>Aircraft</th><th>Flight Time</th><th>Bot $/day</th><th>Real $/leg</th><th>Real $/day</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr class="rgh"><td colspan="7">— ✈ PAX FLEET —</td></tr>
-        <tr><td>N-031</td><td>LAX→YXC→URA</td><td>Il-96-400</td><td>11h48m</td><td><span class="tag tg">✅</span></td><td class="gold">$1,622k</td><td>#1 fleet earner · stopover</td></tr>
-        <tr><td>N-058</td><td>LAX→BTS→INI</td><td>Il-96-400</td><td>11h49m</td><td><span class="tag tg">✅</span></td><td class="gold">$1,621k</td><td>3rd Il-96 · dedicated stopover route</td></tr>
-        <tr><td>N-062</td><td>ICN→SNP→LRU</td><td>Il-96-400</td><td>11h47m</td><td><span class="tag tg">✅</span></td><td class="gold">$1,615k</td><td>5th Il-96 · new ICN hub</td></tr>
-        <tr><td>N-059</td><td>DFW→BSL→AOK</td><td>Il-96-400</td><td>11h45m</td><td><span class="tag tg">✅</span></td><td class="gold">$1,614k</td><td>4th Il-96 · dedicated stopover route</td></tr>
-        <tr><td>N-030</td><td>CLT→TEV→ABS</td><td>Il-96-400</td><td>11h45m</td><td><span class="tag tg">✅</span></td><td class="gold">$1,614k</td><td>#2 fleet earner · stopover</td></tr>
-        <tr><td>N-063</td><td>ICN→IXD→DOD</td><td>Il-96-400</td><td>11h47m</td><td><span class="tag tg">✅</span></td><td class="gold">$1,613k</td><td>6th Il-96 · new ICN hub</td></tr>
-        <tr><td>N-064</td><td>LHR→SLZ→RES</td><td>Il-96-400</td><td>11h46m</td><td><span class="tag tg">✅</span></td><td class="gold">$1,604k</td><td>7th Il-96 · snowball plan complete!</td></tr>
-        <tr><td>N-061</td><td>DFW→AKN→HIJ</td><td>B737 MAX9</td><td>11h48m</td><td><span class="tag tg">✅</span></td><td class="gold">~$957k</td><td>bonus plane · 923kph (not 881) · shares route w/ N-039 cargo — separate demand pools</td></tr>
-        <tr><td>N-025</td><td>CLT→FRO→ZAH</td><td>DC-10-10</td><td>CI=172, 11h47m</td><td><span class="tag tg">✅</span></td><td class="gold">$962k</td><td>stopover</td></tr>
-        <tr><td>N-045</td><td>LHR→MZR→BDO</td><td>DC-10-10</td><td>CI=174, 11h46m</td><td><span class="tag tg">✅</span></td><td class="gold">$962k</td><td>stopover, top margin</td></tr>
-        <tr><td>N-044</td><td>LAX→JEG→ECN</td><td>DC-10-10</td><td>CI=173, 11h45m</td><td><span class="tag tg">✅</span></td><td class="gold">$958k</td><td>stopover</td></tr>
-        <tr><td>N-033</td><td>LHR→DYU→BTH</td><td>MC-21-400</td><td>CI=156 (~11:39 est.)</td><td><span class="tag tg">✅</span></td><td class="gold">~$917k</td><td>exact time unconfirmed</td></tr>
-        <tr><td>N-056</td><td>CLT→TBS</td><td>B787-8</td><td>CI=181, 11h47m</td><td><span class="tag tg">✅</span></td><td class="gold">~$920k</td><td>direct</td></tr>
-        <tr><td>N-057</td><td>LHR→PEM</td><td>B787-8</td><td>11h48m</td><td><span class="tag tg">✅</span></td><td class="gold">$915k</td><td>direct, was LHR→DAD</td></tr>
-        <tr><td>N-028</td><td>CLT→FAI→FKS</td><td>MC-21-400</td><td>11h45m</td><td><span class="tag tg">✅</span></td><td class="gold">$911k</td><td>CI-adjusted</td></tr>
-        <tr><td>N-041</td><td>LAX→VIL</td><td>B787-8</td><td>11h43m</td><td><span class="tag tg">✅</span></td><td class="gold">$909k</td><td>direct, was 20hr LAX-CGK</td></tr>
-        <tr><td>N-032</td><td>LAX→YQX→INZ</td><td>MC-21-400</td><td>CI=153 →~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">$904k</td><td>—</td></tr>
-        <tr><td>N-034</td><td>LAX→YQX→INZ</td><td>MC-21-400</td><td>CI=153 →~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$904k</td><td>in maintenance</td></tr>
-        <tr><td>N-036</td><td>LAX→YQX→INZ</td><td>MC-21-400</td><td>CI=153 →~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">$904k</td><td>3rd on route</td></tr>
-        <tr><td>N-021</td><td>CLT→VPE</td><td>B767-200ER</td><td>CI=173, 11h46m</td><td><span class="tag tg">✅</span></td><td class="gold">$824k</td><td>direct, margin 147.14</td></tr>
-        <tr><td>N-050</td><td>CLT→SFJ→KGF</td><td>B757-200</td><td>11h49m</td><td><span class="tag tg">✅</span></td><td class="gold">$720k</td><td>new stopover, was CLT→PWE</td></tr>
-        <tr><td>N-012</td><td>CLT→XFW→OSM</td><td>B757-200</td><td>CI=181, 11h47m</td><td><span class="tag tg">✅</span></td><td class="gold">$716k</td><td>stopover</td></tr>
-        <tr><td>N-011</td><td>CLT→XFW→OSM</td><td>B757-200</td><td>11h44m</td><td><span class="tag tg">✅</span></td><td class="gold">$716k</td><td>2nd on stopover</td></tr>
-        <tr><td>N-001</td><td>CLT→ABJ</td><td>B737-800</td><td>CI=155, 11h45m</td><td><span class="tag tg">✅</span></td><td class="gold">$663k</td><td>best margin (71.3)</td></tr>
-        <tr><td>N-015</td><td>CLT→CUM→GYN</td><td>A300B2-200</td><td>CI=108, 11h44m</td><td><span class="tag tg">✅</span></td><td class="gold">$615k</td><td>—</td></tr>
-        <tr><td>N-002</td><td>LHR→OMS→LAO</td><td>A320-200</td><td>CI=193, 11h46m</td><td><span class="tag tg">✅</span></td><td class="gold">$613k</td><td>CI tuned</td></tr>
-        <tr><td>N-013</td><td>CLT→SCC→JMU</td><td>A320-200</td><td>11h47m</td><td><span class="tag tg">✅</span></td><td class="gold">$609k</td><td>0Y bug fixed, CI not re-confirmed</td></tr>
-        <tr><td>N-029</td><td>CLT→GOH→SVL</td><td>MD-88</td><td>11h48m</td><td><span class="tag tg">✅</span></td><td class="gold">$436k</td><td>—</td></tr>
-        <tr><td>N-054</td><td>LAX→CZM→BVB</td><td>Caravelle 12</td><td>CI-adj →~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$366k</td><td>bridge play</td></tr>
-        <tr><td>N-055</td><td>LHR→OGZ→AMD</td><td>Caravelle 12</td><td>CI=95→~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$360k</td><td>bridge play</td></tr>
-        <tr><td>N-048</td><td>LAX→BDE→YMN</td><td>ERJ 190-200</td><td>CI=56→~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$282k</td><td>was MLI-LAX</td></tr>
-        <tr><td>N-047</td><td>DFW→MGA→ATA</td><td>ERJ 190-200</td><td>CI=58→~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$281k</td><td>was DFW-ATA</td></tr>
-        <tr><td>N-040</td><td>DFW→MGA→CHM</td><td>ERJ 190-200</td><td>CI=43→~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$281k</td><td>was RBL-DFW</td></tr>
-        <tr><td>N-042</td><td>DFW→MGA→CHM</td><td>ERJ 190-200</td><td>CI=56→~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$281k</td><td>2nd on route</td></tr>
-        <tr><td>N-043</td><td>CLT→YTD→YOC</td><td>ERJ 190-200</td><td>CI=58→~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$281k</td><td>was EIS-CLT</td></tr>
-        <tr><td>N-049</td><td>LHR→SAW→BAH</td><td>ERJ 190-200</td><td>CI=56→~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$281k</td><td>was SVO-LHR</td></tr>
-        <tr class="rgh"><td colspan="7">— 📦 CARGO FLEET —</td></tr>
-        <tr><td>N-039</td><td>DFW→AKN→HIJ</td><td>B757-200F</td><td>11h45m</td><td><span class="tag tg">✅</span></td><td class="gold">$909k</td><td>best cargo route</td></tr>
-        <tr><td colspan="7" style="color:#5a8aaa;font-size:0.7rem;">N-017 (A400M, CLT→MDE→CJC) — sold</td></tr>
-        <tr><td>N-046</td><td>LHR→ESL→IXC</td><td>A400M</td><td>CI-adj →~11:45</td><td><span class="tag tg">✅</span></td><td class="gold">~$355k</td><td>CI tuned</td></tr>
-        <tr class="rgh"><td colspan="7">— 🛩 CHARTER FLEET —</td></tr>
-        <tr><td>N-038</td><td>DFW→NOU</td><td>A330-900neo</td><td>CI=181, 15h56m</td><td><span class="tag tb">charter</span></td><td class="gold">~$16.1M/wk ceiling</td><td>10 cycles · real result tracking ~75% of ceiling</td></tr>
-        <tr><td>N-060</td><td>DFW→RUH</td><td>A340-200</td><td>12h13m (CI=200 fixed)</td><td><span class="tag tb">charter · XP</span></td><td class="gold">$6.12M/8cyc</td><td>29Y/105J · XP-farming strategy, 74.1% margin</td></tr>
-        <tr><td>N-065</td><td>DFW→TPE</td><td>A340-200</td><td>11h52m (CI=200)</td><td><span class="tag tb">charter · XP</span></td><td class="gold">$6.07M/8cyc</td><td>1Y/119J · XP-farming, capacity-constrained on J</td></tr>
+        <tr class="rgh"><td colspan="8">— ✈ PAX FLEET —</td></tr>
+        <tr><td>N-031</td><td>LAX→YXC→URA</td><td>Il-96-400</td><td>11h48m</td><td class="muted">$1,622k</td><td class="green">$1.01M</td><td class="green" style="font-weight:700;">~$2.02M</td><td>#1 fleet earner · stopover</td></tr>
+        <tr><td>N-058</td><td>LAX→BTS→INI</td><td>Il-96-400</td><td>11h49m</td><td class="muted">$1,621k</td><td class="green">$1.09M</td><td class="green" style="font-weight:700;">~$2.18M</td><td>3rd Il-96 · dedicated stopover route</td></tr>
+        <tr><td>N-062</td><td>ICN→SNP→LRU</td><td>Il-96-400</td><td>11h47m</td><td class="muted">$1,615k</td><td class="green">$1.09M</td><td class="green" style="font-weight:700;">~$2.18M</td><td>5th Il-96 · new ICN hub</td></tr>
+        <tr><td>N-059</td><td>DFW→BSL→AOK</td><td>Il-96-400</td><td>11h45m</td><td class="muted">$1,614k</td><td class="green">$1.09M</td><td class="green" style="font-weight:700;">~$2.18M</td><td>4th Il-96 · dedicated stopover route</td></tr>
+        <tr><td>N-030</td><td>CLT→TEV→ABS</td><td>Il-96-400</td><td>11h45m</td><td class="muted">$1,614k</td><td class="green">$1.11M</td><td class="green" style="font-weight:700;">~$2.22M</td><td>#2 fleet earner · stopover · flies Y0</td></tr>
+        <tr><td>N-063</td><td>ICN→IXD→DOD</td><td>Il-96-400</td><td>11h47m</td><td class="muted">$1,613k</td><td class="green">$1.09M</td><td class="green" style="font-weight:700;">~$2.18M</td><td>6th Il-96 · new ICN hub</td></tr>
+        <tr><td>N-064</td><td>LHR→SLZ→RES</td><td>Il-96-400</td><td>11h46m</td><td class="muted">$1,604k</td><td class="green">$1.09M</td><td class="green" style="font-weight:700;">~$2.18M</td><td>7th Il-96 · snowball plan complete!</td></tr>
+        <tr><td>N-061</td><td>DFW→AKN→HIJ</td><td>B737 MAX9</td><td>11h48m</td><td class="muted">~$957k</td><td class="no">—</td><td class="no">—</td><td>bonus plane · 923kph (not 881) · shares route w/ N-039 cargo — separate demand pools · type unsampled</td></tr>
+        <tr><td>N-045</td><td>LHR→MZR→BDO</td><td>DC-10-10</td><td>CI=174, 11h46m</td><td class="muted">$962k</td><td class="green">$745k</td><td class="green" style="font-weight:700;">~$1.49M</td><td>stopover, top margin · 837Y/265J/93F unsold — room for 2nd plane</td></tr>
+        <tr><td>N-025</td><td>CLT→FRO→ZAH</td><td>DC-10-10</td><td>CI=172, 11h47m</td><td class="muted">$962k</td><td class="green">$745k</td><td class="green" style="font-weight:700;">~$1.49M</td><td>stopover · near-tapped demand</td></tr>
+        <tr><td>N-044</td><td>LAX→JEG→ECN</td><td>DC-10-10</td><td>CI=173, 11h45m</td><td class="muted">$958k</td><td class="green">$730k</td><td class="green" style="font-weight:700;">~$1.46M</td><td>stopover · 875Y/226J/113F unsold — room for 2nd plane</td></tr>
+        <tr><td>N-021</td><td>CLT→VPE</td><td>B767-200ER</td><td>CI=173, 11h46m</td><td class="muted">$824k</td><td class="green">$690k</td><td class="green" style="font-weight:700;">~$1.38M</td><td>direct · highest real ratio (1.67×) — bot underranks this plane</td></tr>
+        <tr><td>N-057</td><td>LHR→PEM</td><td>B787-8</td><td>11h48m</td><td class="muted">$915k</td><td class="green">$650k</td><td class="green" style="font-weight:700;">~$1.30M</td><td>direct, was LHR→DAD</td></tr>
+        <tr><td>N-056</td><td>CLT→TBS</td><td>B787-8</td><td>CI=181, 11h47m</td><td class="muted">~$920k</td><td class="green">$640k</td><td class="green" style="font-weight:700;">~$1.28M</td><td>direct · 886Y/147J/159F unsold — room for 2nd plane</td></tr>
+        <tr><td>N-041</td><td>LAX→VIL</td><td>B787-8</td><td>11h43m</td><td class="muted">$909k</td><td class="green">$640k</td><td class="green" style="font-weight:700;">~$1.28M</td><td>direct, was 20hr LAX-CGK · ⚠ A-check in 46 hrs</td></tr>
+        <tr><td>N-028</td><td>CLT→FAI→FKS</td><td>MC-21-400</td><td>11h45m</td><td class="muted">$911k</td><td class="green">$635k</td><td class="green" style="font-weight:700;">~$1.27M</td><td>CI-adjusted · 587Y/114J/158F unsold — room for 2nd plane</td></tr>
+        <tr><td>N-033</td><td>LHR→DYU→BTH</td><td>MC-21-400</td><td>CI=156 (~11:39 est.)</td><td class="muted">~$917k</td><td class="green">$635k</td><td class="green" style="font-weight:700;">~$1.27M</td><td>exact time unconfirmed</td></tr>
+        <tr><td>N-032</td><td>LAX→YQX→INZ</td><td>MC-21-400</td><td>CI=153 →~11:45</td><td class="muted">$904k</td><td class="green">$635k</td><td class="green" style="font-weight:700;">~$1.27M</td><td>—</td></tr>
+        <tr><td>N-034</td><td>LAX→YQX→INZ</td><td>MC-21-400</td><td>CI=153 →~11:45</td><td class="muted">~$904k</td><td class="green">$635k</td><td class="green" style="font-weight:700;">~$1.27M</td><td>in maintenance</td></tr>
+        <tr><td>N-036</td><td>LAX→YQX→INZ</td><td>MC-21-400</td><td>CI=153 →~11:45</td><td class="muted">$904k</td><td class="green">$635k</td><td class="green" style="font-weight:700;">~$1.27M</td><td>3rd on route</td></tr>
+        <tr><td>N-012</td><td>CLT→XFW→OSM</td><td>B757-200</td><td>CI=181, 11h47m</td><td class="muted">$716k</td><td class="green">$520k</td><td class="green" style="font-weight:700;">~$1.04M</td><td>stopover · flies Y0</td></tr>
+        <tr><td>N-050</td><td>CLT→SFJ→KGF</td><td>B757-200</td><td>11h49m</td><td class="muted">$720k</td><td class="green">$520k</td><td class="green" style="font-weight:700;">~$1.04M</td><td>new stopover, was CLT→PWE</td></tr>
+        <tr><td>N-011</td><td>CLT→XFW→OSM</td><td>B757-200</td><td>11h44m</td><td class="muted">$716k</td><td class="green">$520k</td><td class="green" style="font-weight:700;">~$1.04M</td><td>2nd on stopover</td></tr>
+        <tr><td>N-015</td><td>CLT→CUM→GYN</td><td>A300B2-200</td><td>CI=108, 11h44m</td><td class="muted">$615k</td><td class="green">$477k</td><td class="green" style="font-weight:700;">~$955k</td><td>highest ratio after B767 (1.55×)</td></tr>
+        <tr><td>N-013</td><td>CLT→SCC→JMU</td><td>A320-200</td><td>11h47m</td><td class="muted">$609k</td><td class="green">$433k</td><td class="green" style="font-weight:700;">~$866k</td><td>0Y bug fixed, CI not re-confirmed</td></tr>
+        <tr><td>N-002</td><td>LHR→OMS→LAO</td><td>A320-200</td><td>CI=193, 11h46m</td><td class="muted">$613k</td><td class="green">$433k</td><td class="green" style="font-weight:700;">~$866k</td><td>CI tuned</td></tr>
+        <tr><td>N-001</td><td>CLT→ABJ</td><td>B737-800</td><td>CI=155, 11h45m</td><td class="muted">$663k</td><td class="green">$400k</td><td class="green" style="font-weight:700;">~$800k</td><td>best margin (71.3) · 931Y/461J/287F — plane far too small for route</td></tr>
+        <tr><td>N-029</td><td>CLT→GOH→SVL</td><td>MD-88</td><td>11h48m</td><td class="muted">$436k</td><td class="green">$335k</td><td class="green" style="font-weight:700;">~$670k</td><td>—</td></tr>
+        <tr><td>N-055</td><td>LHR→OGZ→AMD</td><td>Caravelle 12</td><td>CI=95→~11:45</td><td class="muted">~$360k</td><td class="green">$250k</td><td class="green" style="font-weight:700;">~$500k</td><td>bridge play · ⚠ A-check in 47 hrs</td></tr>
+        <tr><td>N-054</td><td>LAX→CZM→BVB</td><td>Caravelle 12</td><td>CI-adj →~11:45</td><td class="muted">~$366k</td><td class="green">$250k</td><td class="green" style="font-weight:700;">~$500k</td><td>bridge play</td></tr>
+        <tr><td>N-040</td><td>DFW→MGA→CHM</td><td>ERJ 190-200</td><td>CI=43→~11:45</td><td class="muted">~$281k</td><td class="green">$175k</td><td class="green" style="font-weight:700;">~$350k</td><td>was RBL-DFW · worst real ratio in fleet (1.25×) — Tier 4 confirmed</td></tr>
+        <tr><td>N-048</td><td>LAX→BDE→YMN</td><td>ERJ 190-200</td><td>CI=56→~11:45</td><td class="muted">~$282k</td><td class="green">$175k</td><td class="green" style="font-weight:700;">~$350k</td><td>was MLI-LAX</td></tr>
+        <tr><td>N-047</td><td>DFW→MGA→ATA</td><td>ERJ 190-200</td><td>CI=58→~11:45</td><td class="muted">~$281k</td><td class="green">$175k</td><td class="green" style="font-weight:700;">~$350k</td><td>was DFW-ATA</td></tr>
+        <tr><td>N-042</td><td>DFW→MGA→CHM</td><td>ERJ 190-200</td><td>CI=56→~11:45</td><td class="muted">~$281k</td><td class="green">$175k</td><td class="green" style="font-weight:700;">~$350k</td><td>2nd on route</td></tr>
+        <tr><td>N-043</td><td>CLT→YTD→YOC</td><td>ERJ 190-200</td><td>CI=58→~11:45</td><td class="muted">~$281k</td><td class="green">$175k</td><td class="green" style="font-weight:700;">~$350k</td><td>was EIS-CLT</td></tr>
+        <tr><td>N-049</td><td>LHR→SAW→BAH</td><td>ERJ 190-200</td><td>CI=56→~11:45</td><td class="muted">~$281k</td><td class="green">$175k</td><td class="green" style="font-weight:700;">~$350k</td><td>was SVO-LHR</td></tr>
+        <tr class="rgh"><td colspan="8">— 📦 CARGO FLEET —</td></tr>
+        <tr><td>N-039</td><td>DFW→AKN→HIJ</td><td>B757-200F</td><td>11h45m</td><td class="muted">$909k</td><td class="green">$540k</td><td class="green" style="font-weight:700;">~$1.08M</td><td>best cargo route · performing to spec at current rep</td></tr>
+        <tr><td colspan="8" style="color:#5a8aaa;font-size:0.7rem;">N-017 (A400M, CLT→MDE→CJC) — sold</td></tr>
+        <tr><td>N-046</td><td>LHR→ESL→IXC</td><td>A400M</td><td>CI-adj →~11:45</td><td class="muted">~$355k</td><td class="green">$215k</td><td class="green" style="font-weight:700;">~$430k</td><td>CI tuned · wear 8.97% (highest in fleet) · ⚠ A-check in 37 hrs</td></tr>
+        <tr class="rgh"><td colspan="8">— 🛩 CHARTER FLEET —</td></tr>
+        <tr><td>N-038</td><td>DFW→NOU</td><td>A330-900neo</td><td>CI=181, 15h56m</td><td class="muted">~$16.1M/wk ceiling</td><td class="green">$12.06M</td><td class="green" style="font-weight:700;">per run</td><td>latest run (CR-0036, current seat layout) — use this figure going forward</td></tr>
+        <tr><td>N-060</td><td>DFW→RUH</td><td>A340-200</td><td>12h13m (CI=200 fixed)</td><td class="muted">$8.20M est</td><td class="green">$7.09M</td><td class="green" style="font-weight:700;">~$5.25M profit</td><td>29Y/105J · XP-farming · came in 14% under estimate · J nearly drained (65/847)</td></tr>
+        <tr><td>N-065</td><td>DFW→TPE</td><td>A340-200</td><td>11h52m (CI=200)</td><td class="muted">$8.20M est</td><td class="green">~$7.0M</td><td class="green" style="font-weight:700;">~$5.2M profit</td><td>1Y/119J · XP-farming, capacity-constrained on J</td></tr>
       </tbody>
     </table>
     <div style="font-size:0.66rem;color:#3a6a8a;margin-top:7px;">Sorted by daily profit within each fleet. All routes confirmed live. Figures are bot per-trip ceilings; real daily earnings run higher (2 legs/day). DC-9-10 ×8, Fokker 70A, BAe 146-300, CRJ 900LR all sold.</div>
