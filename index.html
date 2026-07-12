@@ -218,11 +218,6 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
           <tr><td class="muted">A380-800</td><td>end game</td><td class="muted">TBD — needs spec check</td><td class="muted">—</td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.66rem;color:#5a8aaa;margin-top:6px;">
-        <strong class="green">The B787-10s solve LAX and LHR</strong> — the only two hubs with no Il-96-viable route (both candidates exceed its 10,000km range). Direct payoff on this roadmap.<br>
-        <strong class="gold">CLT→Shanghai is B747-8-only:</strong> needs 1,044kph, and the B787-10 tops out at 1,039. Five kph short.<br>
-        <span class="muted">Reach = min(speed × 11.75h, 2 × range w/ stopover). Speed is the binding constraint on all three.</span>
-      </div>
     </div>
 
     <div style="margin-top:10px;background:#0a1520;border-radius:7px;padding:9px;border:1px solid #1e3a52;">
@@ -282,12 +277,6 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-046</td><td>A400M</td><td>LHR→ESL→IXC</td><td class="gold">~$430k/day <span class="green">(measured)</span></td><td class="red">⚠ 37% under · wear 8.97%</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:8px;background:#1a1010;border:1px solid #c0392b;border-radius:7px;padding:9px;font-size:0.7rem;color:#a0b8cc;line-height:1.6;">
-      <span class="red" style="font-weight:700;">⚠ Cargo reputation ★2.5 (~50%) is the biggest lever here.</span> Cargo income scales with it almost linearly. Guide's ideal (100% rep): B757-200F $2.14M/day, A400M $1.37M/day. At ~50% rep you get roughly half. <strong class="green">Raising cargo rep to ★4 beats any config or route change — and costs only campaign upkeep.</strong><br>
-      <span class="red" style="font-weight:700;">⚠ N-046 (A400M) is underperforming badly</span> — measured ~$430k/day vs ~$685k expected at current rep. Wear <strong>8.97%</strong> (3× the fleet) and only <strong>37 hrs to check</strong>. Run the A-check.<br>
-      <span class="blue" style="font-weight:700;">Range-locked:</span> B757-200F 5,834km · A400M 3,298km. Every high-demand route in the dataset is 7,000km+ — <strong>the current fleet physically cannot reach them.</strong> Strongest argument for the upgrade below.
-    </div>
-    <div style="margin-top:7px;font-size:0.67rem;color:#3a6a8a;">✅ <strong>Config is correct</strong> — both planes run 100% Large, which the guide recommends ("Large loads preferable, but only by a very small margin"). A 100%-Large plane carries 70% of spec capacity and cannot carry Heavy at all — that's by design, not a misconfiguration.<br>📐 Cargo demand formula confirmed exactly: <strong class="gold">Large = 500 × Y</strong> · <strong class="gold">Heavy = 1,000 × J</strong>. Derive cargo demand from any PAX bot search.</div>
 
     <!-- Goal 3b: Fleet Expansion -->
     <div style="margin-top:11px;background:#0a1828;border:2px solid #5bc0f5;border-radius:8px;padding:11px;">
@@ -299,13 +288,6 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
           <tr><td class="gold">🏆</td><td class="green"><strong>B747-8F</strong></td><td class="green">$135.5M</td><td>303.7k lbs · 993kph · 25 lbs/km · reach 11,669km — endgame capacity</td></tr>
         </tbody>
       </table>
-      <div style="margin-top:9px;font-size:0.67rem;color:#a0b8cc;line-height:1.6;">
-        <strong class="blue">Fuel per lb carried</strong> (the metric that decides it): <span class="green">A350F 0.0000694 🥇</span> · B747-8F 0.0000823 · A330-200F 0.0000963 · B747-400F 0.000130 · <span class="muted">B757-200F (yours) 0.000251 · A400M (yours) 0.000294</span><br>
-        <span class="red">❌ Rejected — B767-300F:</span> only <strong>5,302km</strong> reach even with a stopover. Regional freighter; can't serve any hub route.<br>
-        <span class="red">❌ Rejected — B747-400F:</span> burns <strong>39 lbs/km vs the 8F's 25</strong>. Costs ~$225k/day more in fuel; the 8F's $8.9M premium pays back in ~40 days.<br>
-        <span class="red">❌ Rejected — A380-800F:</span> $298.8M for worse fuel than the A350F. Dud.<br>
-        <span class="gold">📐 Stopovers double effective range</span>, so range rarely binds — <strong>speed</strong> caps distance at ~11,700–12,200km for all top freighters. Pick on fuel + capacity, not range.
-      </div>
     </div>
   </div>
 </div>
@@ -343,8 +325,6 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td class="red">🔴</td><td class="red"><strong>ERJ 190-200 ×6</strong></td><td>6 separate stopovers</td><td class="gold">~$267-282k ea</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:8px;font-size:0.69rem;color:#5a8aaa;">Sold so far: ALL DC-9-10 ✓, Fokker 70A, BAe 146-300, CRJ 900LR ✓ · Every remaining plane earns real money — sell only when a $1M+ replacement needs the hangar slot, lowest-tier first.</div>
-    <div style="margin-top:7px;font-size:0.67rem;color:#3a6a8a;">Key rules: (1) ~11:45 = lands right at login, zero idle. (2) Stopovers auto-continue = 1 dispatch covers 2 legs. (3) Never cross a full-hour boundary upward on CI — 5:59:59 = 6 A-check hrs, 6:00:01 = 7. (4) Bot "$/day" = 1 trip at ~99% fill. You fly 2 legs/day, so real daily profit runs above it — see Full Fleet note. (5) <span class="yellow">N-061 is a bonus plane at 923kph — bot assumes 881kph and overstates its flight times. Always recompute: distance ÷ 923.</span> (6) PAX and cargo demand are separate pools — a freighter and a PAX plane can share a route without splitting demand.</div>
   </div>
 </div>
 
@@ -361,9 +341,6 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-025</td><td>DC-10-10</td><td>CLT→ZAH</td><td class="gold">$720–785k</td><td class="green">~$1.5M</td><td class="muted">$962k</td><td class="green">beats bot</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:8px;font-size:0.69rem;color:#a0b8cc;">Figures are <strong>gross income per leg</strong> — subtract fuel/CO₂/A-check (~16% on the N-061 sample) for profit. Even so, all four clear their bot number.</div>
-    <div style="margin-top:6px;font-size:0.67rem;color:#5a8aaa;">⚠ Il-96 flight logs show occasional near-empty legs ($10k–$137k). These were <span class="yellow">4× speed artifacts</span> — demand was drained faster than it regenerates. Not the steady state; ignore when averaging.</div>
-    <div style="margin-top:6px;font-size:0.67rem;color:#5a8aaa;">Il-96 configs are premium-heavy (Y barely used — N-030 flies Y0). F carries the revenue. Worth revisiting whether idle Y demand (400+/day on some routes) is worth capturing.</div>
   </div>
 </div>
 
