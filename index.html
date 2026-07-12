@@ -207,6 +207,24 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
 
     <div style="margin-top:11px;font-size:0.72rem;color:#a0b8cc;">✅ <strong class="green">Il-96 Snowball complete</strong> — 7 planes (N-030, N-031, N-058, N-059, N-062, N-063, N-064), $11.3M/day combined, 25-day payback (best capital efficiency in the fleet). ICN hub + lounge purchased along the way. Now saving for B787-10 #1.</div>
 
+    <div style="margin-top:10px;background:#0a1520;border-radius:7px;padding:10px;border:1px solid #1e3a52;">
+      <div style="font-size:0.67rem;color:#5bc0f5;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Route Assignments — Roadmap Aircraft</div>
+      <table style="width:100%;font-size:0.72rem;">
+        <thead><tr><th>Aircraft</th><th>Specs (+10%)</th><th>Assigned Route</th><th>Demand</th></tr></thead>
+        <tbody>
+          <tr><td class="gold"><strong>B787-10 #1</strong></td><td>1,039kph · reach 12,208km</td><td class="green"><strong>LAX→FRU</strong> (Bishkek) 11,353km</td><td class="gold">2,097Y / 352J</td></tr>
+          <tr><td class="gold"><strong>B787-10 #2</strong></td><td>1,039kph · reach 12,208km</td><td class="green"><strong>LHR→CCK</strong> (Cocos Is.) 11,568km</td><td class="gold">2,220Y / 394J</td></tr>
+          <tr><td class="gold"><strong>B747-8</strong></td><td>1,087kph · reach 12,772km</td><td class="green"><strong>CLT→SHA</strong> (Shanghai) 12,272km</td><td class="gold">2,328Y / 308J</td></tr>
+          <tr><td class="muted">A380-800</td><td>end game</td><td class="muted">TBD — needs spec check</td><td class="muted">—</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:0.66rem;color:#5a8aaa;margin-top:6px;">
+        <strong class="green">The B787-10s solve LAX and LHR</strong> — the only two hubs with no Il-96-viable route (both candidates exceed its 10,000km range). Direct payoff on this roadmap.<br>
+        <strong class="gold">CLT→Shanghai is B747-8-only:</strong> needs 1,044kph, and the B787-10 tops out at 1,039. Five kph short.<br>
+        <span class="muted">Reach = min(speed × 11.75h, 2 × range w/ stopover). Speed is the binding constraint on all three.</span>
+      </div>
+    </div>
+
     <div style="margin-top:10px;background:#0a1520;border-radius:7px;padding:9px;border:1px solid #1e3a52;">
       <div style="font-size:0.67rem;color:#5bc0f5;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Confirmed Profit Scorecard (multi-route tested)</div>
       <table style="width:100%;font-size:0.72rem;">
@@ -277,10 +295,17 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
       <table>
         <thead><tr><th>Step</th><th>Aircraft</th><th>Price</th><th>Specs</th></tr></thead>
         <tbody>
-          <tr><td class="gold">1</td><td class="white">B767-300F</td><td class="green">$50.65M</td><td>$5.14M/day ideal · <span class="green">A330-200F earns only 2-3% more for $12M extra</span></td></tr>
-          <tr><td class="gold">🏆</td><td class="white">B747-400F</td><td class="green">$126.6M</td><td>$5.999M/day ideal · <span class="green">B747-8F earns the SAME but costs $9M more</span></td></tr>
+          <tr><td class="gold">1</td><td class="green"><strong>A350F</strong></td><td class="green">$60.5M</td><td>245k lbs · 1,040kph · <strong class="gold">17 lbs/km</strong> — best fuel economy in the game · reach 12,214km</td></tr>
+          <tr><td class="gold">🏆</td><td class="green"><strong>B747-8F</strong></td><td class="green">$135.5M</td><td>303.7k lbs · 993kph · 25 lbs/km · reach 11,669km — endgame capacity</td></tr>
         </tbody>
       </table>
+      <div style="margin-top:9px;font-size:0.67rem;color:#a0b8cc;line-height:1.6;">
+        <strong class="blue">Fuel per lb carried</strong> (the metric that decides it): <span class="green">A350F 0.0000694 🥇</span> · B747-8F 0.0000823 · A330-200F 0.0000963 · B747-400F 0.000130 · <span class="muted">B757-200F (yours) 0.000251 · A400M (yours) 0.000294</span><br>
+        <span class="red">❌ Rejected — B767-300F:</span> only <strong>5,302km</strong> reach even with a stopover. Regional freighter; can't serve any hub route.<br>
+        <span class="red">❌ Rejected — B747-400F:</span> burns <strong>39 lbs/km vs the 8F's 25</strong>. Costs ~$225k/day more in fuel; the 8F's $8.9M premium pays back in ~40 days.<br>
+        <span class="red">❌ Rejected — A380-800F:</span> $298.8M for worse fuel than the A350F. Dud.<br>
+        <span class="gold">📐 Stopovers double effective range</span>, so range rarely binds — <strong>speed</strong> caps distance at ~11,700–12,200km for all top freighters. Pick on fuel + capacity, not range.
+      </div>
     </div>
   </div>
 </div>
@@ -451,7 +476,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-043</td><td>ERJ 190-200</td><td>CLT→YTD→YOC</td><td><span class="tag" style="background:#0a2a12;color:#2ecc71;" title="PAX = passenger flight">PAX</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">CLT→NDJ</span> (N'Djamena) 9,765km · <span class="gold">2,041Y / 283J / 181F</span> — only in-range option, near-max distance</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">CLT→NDJ</span> (N'Djamena) 9,765km · <span class="gold">2,041Y / 283J / 181F</span> — only in-range option, near-max distance<br>📦 <span class="gold">Cargo:</span> same route — <strong>1,020,500 lbs Large</strong> / 283,000 Heavy</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -473,7 +498,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-065</td><td>A340-200</td><td>DFW→TPE</td><td><span class="tag" style="background:#0a1a3a;color:#5bc0f5;" title="Charter = Vertigo Air charter contract">Charter</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">DFW→WLS</span> (Wallis Is.) 9,821km · <span class="gold">2,347Y</span> — highest Y demand in dataset<br>🎯 <span class="green">DFW→BSB</span> (Brasília) 7,523km · <span class="gold">500J</span> — highest J demand anywhere · premium config</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">DFW→WLS</span> (Wallis Is.) 9,821km · <span class="gold">2,347Y</span> — highest Y demand in dataset<br>🎯 <span class="green">DFW→BSB</span> (Brasília) 7,523km · <span class="gold">500J</span> — highest J demand anywhere · premium config<br>📦 <span class="gold">Cargo:</span> DFW→WLS — <strong>1,173,500 lbs Large</strong> (biggest of any hub) / 266,000 Heavy</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -495,7 +520,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-048</td><td>ERJ 190-200</td><td>LAX→BDE→YMN</td><td><span class="tag" style="background:#0a2a12;color:#2ecc71;" title="PAX = passenger flight">PAX</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">⚠ <span class="yellow">No in-range route in dataset.</span> Best candidate LAX→FRU (Bishkek) 2,097Y — but 11,353km exceeds Il-96's 10,000km range. Needs a longer-range aircraft.</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">LAX→FRU</span> (Bishkek) 11,353km · <span class="gold">2,097Y / 352J</span> — needs 966kph: <strong class="green">B787-10 ✓</strong> (out of reach for the Il-96)<br>📦 <span class="gold">Cargo:</span> same route — 1,048,500 lbs Large / 352,000 Heavy · A350F ✓</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -516,7 +541,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-046</td><td>A400M</td><td>LHR→ESL→IXC</td><td><span class="tag" style="background:#3a2a00;color:#f0c040;" title="Cargo = freight flight">Cargo</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">⚠ <span class="yellow">No viable option.</span> LHR→CCK (Cocos) 2,220Y is 11,568km — over range. LHR→LUX 2,093Y is only 514km — far too short for the 11:45 window.</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">LHR→CCK</span> (Cocos Is.) 11,568km · <span class="gold">2,220Y / 394J</span> — needs 984kph: <strong class="green">B787-10 ✓</strong><br>📦 <span class="gold">Cargo:</span> same route — 1,110,000 lbs Large / 394,000 Heavy · A350F ✓ · B747-8F ✓</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -531,13 +556,13 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-063</td><td>Il-96-400</td><td>ICN→IXD→DOD</td><td><span class="tag" style="background:#0a2a12;color:#2ecc71;" title="PAX = passenger flight">PAX</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">ICN→GUM</span> 3,227km · <span class="gold">2,352Y</span> &nbsp;·&nbsp; <span class="green">ICN→SIN</span> 4,627km · <span class="gold">2,329Y</span><br><span style="color:#3a6a8a;">Both too short for a direct 11:45 — ideal as <strong>stopover legs</strong>. Prior: ICN→AKL 11h52m✅</span></div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">ICN→GUM</span> 3,227km · <span class="gold">2,352Y</span> &nbsp;·&nbsp; <span class="green">ICN→SIN</span> 4,627km · <span class="gold">2,329Y</span><br><span style="color:#3a6a8a;">Both too short for a direct 11:45 — pair as <strong>stopover legs</strong>. Prior: ICN→AKL 11h52m✅</span><br>📦 <span class="gold">Cargo:</span> ICN→GUM — <strong class="green">1,176,000 lbs Large — highest in the entire dataset</strong></div>
     </div>
     </div>
     <div style="margin-top:10px;font-size:0.66rem;color:#3a6a8a;">"Ideas to verify" are great-circle distance candidates only — not bot-confirmed demand. ICN's routes are the exception, backed by earlier real flight-time research.</div>
   </div>
 </div>
 
-<footer>Nose Over Tail Aviation Command Center · SKY HUB Alliance · Vertigo Air Charter · Build: 3×B787-8✓ → B787-10×2 → B747-8 → A380 · Cargo: B767-300F → B747-400F · 5th Hub: ICN · Updated July 12, 2026 · jdobbsclt.github.io/nose-over-tail-aviation</footer>
+<footer>Nose Over Tail Aviation Command Center · SKY HUB Alliance · Vertigo Air Charter · Build: 3×B787-8✓ → B787-10×2 → B747-8 → A380 · Cargo: A350F → B747-8F · 5th Hub: ICN · Updated July 12, 2026 · jdobbsclt.github.io/nose-over-tail-aviation</footer>
 </body>
 </html>
