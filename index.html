@@ -260,11 +260,16 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
     <table>
       <thead><tr><th>Tail</th><th>Aircraft</th><th>Route</th><th>Result</th><th>Status</th></tr></thead>
       <tbody>
-        <tr><td>N-039</td><td>B757-200F</td><td>DFW→AKN→HIJ</td><td class="gold">$909k/day</td><td class="green">Best cargo route</td></tr>
-        <tr><td>N-046</td><td>A400M</td><td>LHR→ESL→IXC</td><td class="gold">~$355k/day</td><td class="green">Earning well</td></tr>
+        <tr><td>N-039</td><td>B757-200F</td><td>DFW→AKN→HIJ</td><td class="gold">~$1.08M/day <span class="green">(measured)</span></td><td class="green">On spec ✓</td></tr>
+        <tr><td>N-046</td><td>A400M</td><td>LHR→ESL→IXC</td><td class="gold">~$430k/day <span class="green">(measured)</span></td><td class="red">⚠ 37% under · wear 8.97%</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:8px;font-size:0.68rem;color:#5a8aaa;">N-017 (A400M) sold. Both remaining planes on productive stopover routes — upgrades below are for more capacity, not urgent replacements.</div>
+    <div style="margin-top:8px;background:#1a1010;border:1px solid #c0392b;border-radius:7px;padding:9px;font-size:0.7rem;color:#a0b8cc;line-height:1.6;">
+      <span class="red" style="font-weight:700;">⚠ Cargo reputation ★2.5 (~50%) is the biggest lever here.</span> Cargo income scales with it almost linearly. Guide's ideal (100% rep): B757-200F $2.14M/day, A400M $1.37M/day. At ~50% rep you get roughly half. <strong class="green">Raising cargo rep to ★4 beats any config or route change — and costs only campaign upkeep.</strong><br>
+      <span class="red" style="font-weight:700;">⚠ N-046 (A400M) is underperforming badly</span> — measured ~$430k/day vs ~$685k expected at current rep. Wear <strong>8.97%</strong> (3× the fleet) and only <strong>37 hrs to check</strong>. Run the A-check.<br>
+      <span class="blue" style="font-weight:700;">Range-locked:</span> B757-200F 5,834km · A400M 3,298km. Every high-demand route in the dataset is 7,000km+ — <strong>the current fleet physically cannot reach them.</strong> Strongest argument for the upgrade below.
+    </div>
+    <div style="margin-top:7px;font-size:0.67rem;color:#3a6a8a;">✅ <strong>Config is correct</strong> — both planes run 100% Large, which the guide recommends ("Large loads preferable, but only by a very small margin"). A 100%-Large plane carries 70% of spec capacity and cannot carry Heavy at all — that's by design, not a misconfiguration.<br>📐 Cargo demand formula confirmed exactly: <strong class="gold">Large = 500 × Y</strong> · <strong class="gold">Heavy = 1,000 × J</strong>. Derive cargo demand from any PAX bot search.</div>
 
     <!-- Goal 3b: Fleet Expansion -->
     <div style="margin-top:11px;background:#0a1828;border:2px solid #5bc0f5;border-radius:8px;padding:11px;">
@@ -272,8 +277,8 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
       <table>
         <thead><tr><th>Step</th><th>Aircraft</th><th>Price</th><th>Specs</th></tr></thead>
         <tbody>
-          <tr><td class="gold">1</td><td class="white">A330-200F</td><td>$75M</td><td>196k lbs · 958kph · 12,500km ✅ excellent fit</td></tr>
-          <tr><td class="gold">🏆</td><td class="white">B747-8F</td><td>$146M</td><td>308k lbs · 1,050kph · 4× current capacity</td></tr>
+          <tr><td class="gold">1</td><td class="white">B767-300F</td><td class="green">$50.65M</td><td>$5.14M/day ideal · <span class="green">A330-200F earns only 2-3% more for $12M extra</span></td></tr>
+          <tr><td class="gold">🏆</td><td class="white">B747-400F</td><td class="green">$126.6M</td><td>$5.999M/day ideal · <span class="green">B747-8F earns the SAME but costs $9M more</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -314,7 +319,44 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
       </tbody>
     </table>
     <div style="margin-top:8px;font-size:0.69rem;color:#5a8aaa;">Sold so far: ALL DC-9-10 ✓, Fokker 70A, BAe 146-300, CRJ 900LR ✓ · Every remaining plane earns real money — sell only when a $1M+ replacement needs the hangar slot, lowest-tier first.</div>
-    <div style="margin-top:7px;font-size:0.67rem;color:#3a6a8a;">Key rules: (1) ~11:45 = lands right at login, zero idle. (2) Stopovers auto-continue = 1 dispatch covers 2 legs. (3) Never cross a full-hour boundary upward on CI — 5:59:59 = 6 A-check hrs, 6:00:01 = 7. (4) Bot ceiling figures shown — real earnings track reputation (~70% PAX / ~50% cargo). (5) <span class="yellow">N-061 is a bonus plane at 923kph — bot assumes 881kph and overstates its flight times. Always recompute: distance ÷ 923.</span> (6) PAX and cargo demand are separate pools — a freighter and a PAX plane can share a route without splitting demand.</div>
+    <div style="margin-top:7px;font-size:0.67rem;color:#3a6a8a;">Key rules: (1) ~11:45 = lands right at login, zero idle. (2) Stopovers auto-continue = 1 dispatch covers 2 legs. (3) Never cross a full-hour boundary upward on CI — 5:59:59 = 6 A-check hrs, 6:00:01 = 7. (4) Bot "$/day" = 1 trip at ~99% fill. You fly 2 legs/day, so real daily profit runs above it — see Full Fleet note. (5) <span class="yellow">N-061 is a bonus plane at 923kph — bot assumes 881kph and overstates its flight times. Always recompute: distance ÷ 923.</span> (6) PAX and cargo demand are separate pools — a freighter and a PAX plane can share a route without splitting demand.</div>
+  </div>
+</div>
+
+<!-- VERIFIED FLIGHT DATA -->
+<div class="sl">🔬 Verified Flight History — Real Revenue per Leg (Jul 12)</div>
+<div class="g1">
+  <div class="card good">
+    <table>
+      <thead><tr><th>Tail</th><th>Aircraft</th><th>Route</th><th>Typical Leg</th><th>×2 legs/day</th><th>Bot said</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>N-030</td><td>Il-96-400</td><td>CLT→ABS</td><td class="gold">$1.05–1.16M</td><td class="green">~$2.2M</td><td class="muted">$1,613k</td><td class="green">beats bot</td></tr>
+        <tr><td>N-031</td><td>Il-96-400</td><td>LAX→URA</td><td class="gold">$0.88–1.14M</td><td class="green">~$2.1M</td><td class="muted">$1,613k</td><td class="green">beats bot</td></tr>
+        <tr><td>N-058</td><td>Il-96-400</td><td>LAX→INI</td><td class="gold">$0.94–1.19M</td><td class="green">~$2.2M</td><td class="muted">$1,613k</td><td class="green">beats bot</td></tr>
+        <tr><td>N-025</td><td>DC-10-10</td><td>CLT→ZAH</td><td class="gold">$720–785k</td><td class="green">~$1.5M</td><td class="muted">$962k</td><td class="green">beats bot</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:0.69rem;color:#a0b8cc;">Figures are <strong>gross income per leg</strong> — subtract fuel/CO₂/A-check (~16% on the N-061 sample) for profit. Even so, all four clear their bot number.</div>
+    <div style="margin-top:6px;font-size:0.67rem;color:#5a8aaa;">⚠ Il-96 flight logs show occasional near-empty legs ($10k–$137k). These were <span class="yellow">4× speed artifacts</span> — demand was drained faster than it regenerates. Not the steady state; ignore when averaging.</div>
+    <div style="margin-top:6px;font-size:0.67rem;color:#5a8aaa;">Il-96 configs are premium-heavy (Y barely used — N-030 flies Y0). F carries the revenue. Worth revisiting whether idle Y demand (400+/day on some routes) is worth capturing.</div>
+  </div>
+</div>
+
+<!-- STAFF -->
+<div class="sl">👷 Staff & Morale</div>
+<div class="g1">
+  <div class="card warn">
+    <table>
+      <thead><tr><th>Role</th><th>Count</th><th>Salary/ea</th><th>Daily Cost</th><th>Morale</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td class="white">Pilots</td><td>97</td><td>$200</td><td>$19,400</td><td class="green">80%</td><td class="green">OK — hold</td></tr>
+        <tr><td class="white">Crew</td><td>280</td><td>$180</td><td>$50,400</td><td class="yellow">69%</td><td class="yellow">6% raise</td></tr>
+        <tr><td class="white">Engineers</td><td>104</td><td>$298</td><td>$30,992</td><td class="yellow">70%</td><td class="yellow">6% raise</td></tr>
+        <tr><td class="white">Technicians</td><td>158</td><td>$254</td><td>$40,132</td><td class="yellow">68%</td><td class="yellow">6% raise</td></tr>
+        <tr style="background:#0a1520;"><td colspan="3" class="blue"><strong>TOTAL</strong></td><td class="gold"><strong>$140,924/day</strong></td><td colspan="2" style="color:#5a8aaa;">Training points: 1</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:8px;font-size:0.7rem;color:#a0b8cc;">💡 <strong class="green">Raises are nearly free.</strong> Total staff cost is ~1.2% of fleet income. A 6% raise across Crew/Engineers/Technicians adds ~<strong>$7,300/day</strong> — 0.06% of income — and lifts morale, which feeds service quality and reputation. Pilots at 80% are fine; leave them.</div>
   </div>
 </div>
 
@@ -323,7 +365,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
 <div class="g1">
   <div class="card">
     <div style="background:#12100a;border:1px solid #f0c040;border-radius:7px;padding:9px;margin-bottom:10px;font-size:0.71rem;color:#a0b8cc;line-height:1.5;">
-      ⚠ <span class="gold" style="font-weight:700;">Bot profit figures are CEILINGS</span> (assume ~99% seat fill). Real flight data confirms actual load factors track closer to your reputation (PAX ~70%, Cargo ~50%). Treat all $/day figures below as "up to," not guaranteed.
+      ⚠ <span class="gold" style="font-weight:700;">Bot figures model 1 trip/day — you fly 2 legs/day.</span> Real flight history (Jul 12) shows the bot's "$/day" is really "$/leg at ~99% fill." Your legs book below that, but you get <em>two</em> of them — so real daily profit runs <span class="green">above</span> the bot number. Verified: Il-96 ~$1.09M/leg → ~$2.18M/day income (bot said $1,613k). DC-10 ~$745k/leg → ~$1.49M/day (bot said $962k). Use bot figures for <span class="blue">ranking aircraft</span>, not for absolute daily earnings.
     </div>
     <table>
       <thead><tr><th>Tail</th><th>Route</th><th>Aircraft</th><th>Flight Time</th><th>Fit</th><th>Ceiling $/day</th><th>Notes</th></tr></thead>
@@ -375,7 +417,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-065</td><td>DFW→TPE</td><td>A340-200</td><td>11h52m (CI=200)</td><td><span class="tag tb">charter · XP</span></td><td class="gold">$6.07M/8cyc</td><td>1Y/119J · XP-farming, capacity-constrained on J</td></tr>
       </tbody>
     </table>
-    <div style="font-size:0.66rem;color:#3a6a8a;margin-top:7px;">Sorted by daily profit within each fleet. All routes confirmed live. Figures are bot ceilings — real earnings track reputation (~70% PAX / ~50% cargo). DC-9-10 ×8, Fokker 70A, BAe 146-300, CRJ 900LR all sold.</div>
+    <div style="font-size:0.66rem;color:#3a6a8a;margin-top:7px;">Sorted by daily profit within each fleet. All routes confirmed live. Figures are bot per-trip ceilings; real daily earnings run higher (2 legs/day). DC-9-10 ×8, Fokker 70A, BAe 146-300, CRJ 900LR all sold.</div>
   </div>
 </div>
 
@@ -409,7 +451,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-043</td><td>ERJ 190-200</td><td>CLT→YTD→YOC</td><td><span class="tag" style="background:#0a2a12;color:#2ecc71;" title="PAX = passenger flight">PAX</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">💡 CLT→DXB ~11,871km · CLT→DOH ~11,640km</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">CLT→NDJ</span> (N'Djamena) 9,765km · <span class="gold">2,041Y / 283J / 181F</span> — only in-range option, near-max distance</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -431,7 +473,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-065</td><td>A340-200</td><td>DFW→TPE</td><td><span class="tag" style="background:#0a1a3a;color:#5bc0f5;" title="Charter = Vertigo Air charter contract">Charter</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">💡 DFW→AKL ~11,985km · DFW→TLV ~11,211km</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">DFW→WLS</span> (Wallis Is.) 9,821km · <span class="gold">2,347Y</span> — highest Y demand in dataset<br>🎯 <span class="green">DFW→BSB</span> (Brasília) 7,523km · <span class="gold">500J</span> — highest J demand anywhere · premium config</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -453,7 +495,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-048</td><td>ERJ 190-200</td><td>LAX→BDE→YMN</td><td><span class="tag" style="background:#0a2a12;color:#2ecc71;" title="PAX = passenger flight">PAX</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">💡 LAX→MNL ~11,740km · LAX→HKG ~11,665km</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">⚠ <span class="yellow">No in-range route in dataset.</span> Best candidate LAX→FRU (Bishkek) 2,097Y — but 11,353km exceeds Il-96's 10,000km range. Needs a longer-range aircraft.</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -474,7 +516,7 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-046</td><td>A400M</td><td>LHR→ESL→IXC</td><td><span class="tag" style="background:#3a2a00;color:#f0c040;" title="Cargo = freight flight">Cargo</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">💡 LHR→CGK ~11,721km · LHR→SCL ~11,654km</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">⚠ <span class="yellow">No viable option.</span> LHR→CCK (Cocos) 2,220Y is 11,568km — over range. LHR→LUX 2,093Y is only 514km — far too short for the 11:45 window.</div>
     </div>
       <div style="background:#152030;border:1px solid #1e3a52;border-radius:10px;padding:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
@@ -489,13 +531,13 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
         <tr><td>N-063</td><td>Il-96-400</td><td>ICN→IXD→DOD</td><td><span class="tag" style="background:#0a2a12;color:#2ecc71;" title="PAX = passenger flight">PAX</span></td></tr>
         </tbody>
       </table>
-      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">💡 Confirmed: ICN→ADD 11h18m · ICN→AKL 11h52m✅ · ICN→NBO 12h21m</div>
+      <div style="font-size:0.64rem;color:#5a8aaa;margin-top:6px;">🎯 <span class="green">ICN→GUM</span> 3,227km · <span class="gold">2,352Y</span> &nbsp;·&nbsp; <span class="green">ICN→SIN</span> 4,627km · <span class="gold">2,329Y</span><br><span style="color:#3a6a8a;">Both too short for a direct 11:45 — ideal as <strong>stopover legs</strong>. Prior: ICN→AKL 11h52m✅</span></div>
     </div>
     </div>
     <div style="margin-top:10px;font-size:0.66rem;color:#3a6a8a;">"Ideas to verify" are great-circle distance candidates only — not bot-confirmed demand. ICN's routes are the exception, backed by earlier real flight-time research.</div>
   </div>
 </div>
 
-<footer>Nose Over Tail Aviation Command Center · SKY HUB Alliance · Vertigo Air Charter · Build: 3×B787-8✓ → B787-10×2 → B747-8 → A380 · Cargo: A330-200F → B747-8F · 5th Hub: ICN · Updated July 12, 2026 · jdobbsclt.github.io/nose-over-tail-aviation</footer>
+<footer>Nose Over Tail Aviation Command Center · SKY HUB Alliance · Vertigo Air Charter · Build: 3×B787-8✓ → B787-10×2 → B747-8 → A380 · Cargo: B767-300F → B747-400F · 5th Hub: ICN · Updated July 12, 2026 · jdobbsclt.github.io/nose-over-tail-aviation</footer>
 </body>
 </html>
