@@ -206,18 +206,18 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
     <div style="margin-top:10px;background:#0a1520;border-radius:7px;padding:10px;border:1px solid #1e3a52;">
       <div style="font-size:0.67rem;color:#5bc0f5;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Route Assignments — Roadmap Aircraft</div>
       <table style="width:100%;font-size:0.72rem;">
-        <thead><tr><th>Aircraft</th><th>Specs (+10%)</th><th>Assigned Route</th><th>Real profit/day</th><th>Payback</th></tr></thead>
+        <thead><tr><th>Aircraft</th><th>Specs (+10%)</th><th>Assigned Route</th><th>Real $/Leg</th><th>vs $1M Goal</th></tr></thead>
         <tbody>
-          <tr><td class="gold"><strong>B787-10</strong></td><td>946kph · reach 11,116km</td><td class="green"><strong>CLT→APW</strong> (Apia) 10,983km</td><td class="gold">~$954k</td><td>~76d</td></tr>
-          <tr><td class="gold"><strong>A340-300 #1</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>LAX→NYT</strong> (Pyinmana) 13,021km</td><td class="gold">$667k</td><td>~83d</td></tr>
-          <tr><td class="gold"><strong>A340-300 #2</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>ICN→VPE</strong> (Ngiva) 12,962km</td><td class="gold">$665k</td><td>~83d</td></tr>
-          <tr><td class="gold"><strong>A340-300 #3,4</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>LHR→RGL</strong> (Rio Gallegos) 13,151km · ×2</td><td class="gold">$675k ea</td><td>~82d</td></tr>
-          <tr><td class="gold"><strong>A340-300 #5</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>DFW→FJR</strong> (Fujeirah) 12,975km</td><td class="gold">$664k</td><td>~84d</td></tr>
-          <tr><td class="gold"><strong>B747-8</strong></td><td>1,207kph · reach 14,179km</td><td class="green"><strong>CLT→SHA</strong> (Shanghai) 12,272km</td><td class="gold">~$1.30M</td><td>~93d</td></tr>
+          <tr><td class="gold"><strong>B787-10</strong></td><td>946kph · reach 11,116km</td><td class="green"><strong>CLT→APW</strong> (Apia) 10,983km</td><td class="green">$922,500 ✓verified</td><td class="blue">Tier 2</td></tr>
+          <tr><td class="gold"><strong>A340-300 #1</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>LAX→NYT</strong> (Pyinmana) 13,021km</td><td class="muted">not verified</td><td class="muted">unknown</td></tr>
+          <tr><td class="gold"><strong>A340-300 #2</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>ICN→VPE</strong> (Ngiva) 12,962km</td><td class="muted">not verified</td><td class="muted">unknown</td></tr>
+          <tr><td class="gold"><strong>A340-300 #3,4</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>LHR→RGL</strong> (Rio Gallegos) 13,151km · ×2</td><td class="muted">not verified</td><td class="muted">unknown</td></tr>
+          <tr><td class="gold"><strong>A340-300 #5</strong></td><td>1,104kph · reach 12,977km</td><td class="green"><strong>DFW→FJR</strong> (Fujeirah) 12,975km</td><td class="green">$808,880 ✓verified</td><td class="blue">Tier 2</td></tr>
+          <tr><td class="gold"><strong>B747-8</strong></td><td>1,207kph · reach 14,179km</td><td class="green"><strong>CLT→SHA</strong> (Shanghai) 12,272km</td><td class="muted">never bot-tested</td><td class="muted">unknown</td></tr>
           <tr><td class="muted">A380-800</td><td>1,154kph · reach 13,558km</td><td class="muted">not recommended — worst payback (~129d) of 5 tested vs B747-8</td><td class="muted">—</td><td class="muted">—</td></tr>
         </tbody>
       </table>
-      <div style="margin-top:6px;font-size:0.66rem;color:#5a8aaa;">A340-300 ×5: $277.4M total · ~$3.35M/day combined · blended ~83 day payback. DFW→FJR intentionally under-saturated (1 of 3 possible) — room to scale this type further without new route research.</div>
+      <div style="margin-top:6px;font-size:0.66rem;color:#5a8aaa;">A340-300 ×5: $277.4M total. <span class="yellow">⚠ Only DFW→FJR has a real income/leg figure — 3 A340-300 slots and the B747-8 route were sized on profit-per-day estimates, not verified income/leg. Re-run full bot searches on LAX→NYT, ICN→VPE, LHR→RGL, and CLT→SHA to confirm they clear the new goal.</span></div>
     </div>
 
     <div style="margin-top:10px;background:#0a1520;border-radius:7px;padding:9px;border:1px solid #1e3a52;">
@@ -287,40 +287,42 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
           <tr><td class="gold">🏆</td><td class="green"><strong>B747-8F</strong></td><td class="green">$135.5M</td><td>303.7k lbs · 993kph · 25 lbs/km · reach 11,669km — endgame capacity</td></tr>
         </tbody>
       </table>
+      <div style="margin-top:6px;font-size:0.66rem;color:#f1c40f;">⚠ Neither aircraft has been bot-tested on a real cargo route — this plan is spec-based only. Unknown whether either clears $1M+/leg against the new goal. Run a real `$route` cargo search before purchasing to verify.</div>
     </div>
   </div>
 </div>
 
 <!-- SCHEDULE ALIGNMENT -->
-<div class="sl">⏱ Fleet Strategy — Max Profit per 2 Dispatches/Day</div>
+<div class="sl">⏱ Fleet Strategy — Max Revenue per Departure</div>
 <div class="g1">
   <div class="card">
     <div style="background:#12100a;border:2px solid #f0c040;border-radius:8px;padding:11px;margin-bottom:10px;font-size:0.73rem;color:#a0b8cc;">
       <ul style="line-height:1.8;list-style:none;">
-        <li>🎯 <strong class="blue">Goal: $1M+/day per plane.</strong> Ideal flight time ~11:45 (lands right at next login, zero idle). Phase out sub-$1M earners lowest-tier-first as $1M+ replacements arrive.</li>
+        <li>🎯 <strong class="blue">Goal: $1M+/leg per departure</strong> (real, measured — not bot ceiling). Ideal flight time ~11:30-11:48 (lands right at next login, zero idle). Phase out sub-tier earners lowest-first as $1M+ replacements arrive.</li>
       </ul>
     </div>
 
     <table>
-      <thead><tr><th>Tier</th><th>Aircraft</th><th>Route(s)</th><th>Daily/AC</th><th>Fit</th><th>Action</th></tr></thead>
+      <thead><tr><th>Tier</th><th>Aircraft</th><th>Route(s)</th><th>Real $/Leg</th><th>Fit</th><th>Action</th></tr></thead>
       <tbody>
-        <tr class="rgh"><td colspan="6">— 🏆 TIER 1: $1M+/DAY — the target, already hit</td></tr>
-        <tr><td class="gold">🏆</td><td class="green"><strong>Il-96-400 ×11</strong></td><td>11 dedicated routes across CLT/DFW/LAX/LHR/ICN</td><td class="gold">~$1.5M ea</td><td><span class="tag tg">✅ ~11:30-11:48</span></td><td class="green">KEEP — ~$14.9M/day combined, fleet complete</td></tr>
-        <tr class="rgh"><td colspan="6">— 🟢 TIER 2: $700k–999k/DAY — strong, keep flying</td></tr>
-        <tr><td class="green">🟢</td><td class="green"><strong>B737 MAX9 ×1</strong></td><td>DFW→AKN→HIJ (stopover)</td><td class="gold">~$957k</td><td><span class="tag tg">✅ 11:48</span></td><td class="green">KEEP · bonus plane (923kph), near-Tier-1</td></tr>
-        <tr><td class="green">🟢</td><td class="green"><strong>DC-10-10 ×3</strong></td><td>3 separate stopovers</td><td class="gold">~$960k ea</td><td><span class="tag tg">✅ ~11:45</span></td><td class="green">KEEP</td></tr>
-        <tr><td class="green">🟢</td><td class="green"><strong>B787-8 ×3</strong></td><td>DAD, VIL, PEM (direct)</td><td class="gold">~$909-924k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="green">KEEP</td></tr>
-        <tr><td class="green">🟢</td><td class="green"><strong>MC-21-400 ×4</strong></td><td>FAI-FKS, YQX-INZ ×3</td><td class="gold">~$904-911k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="green">KEEP</td></tr>
-        <tr><td class="green">🟢</td><td class="green"><strong>B767-200ER ×1</strong></td><td>CLT→VPE (direct)</td><td class="gold">$824k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="green">KEEP</td></tr>
-        <tr><td class="green">🟢</td><td class="green"><strong>B757-200 ×3</strong></td><td>3 separate stopovers</td><td class="gold">$716-720k ea</td><td><span class="tag tg">✅ ~11:45</span></td><td class="green">KEEP</td></tr>
-        <tr class="rgh"><td colspan="6">— 🟡 TIER 3: $400k–699k/DAY — solid, but first to replace when a $1M+ plane needs the slot</td></tr>
-        <tr><td class="yellow">🟡</td><td class="yellow"><strong>B737-800 ×1</strong></td><td>CLT→BJL→ABJ</td><td class="gold">$663k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="yellow">keep for now</td></tr>
-        <tr><td class="yellow">🟡</td><td class="yellow"><strong>A300B2-200 ×1</strong></td><td>CLT→CUM→GYN</td><td class="gold">$615k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="yellow">keep for now</td></tr>
-        <tr><td class="yellow">🟡</td><td class="yellow"><strong>A320-200 ×2</strong></td><td>SCC-JMU, OMS-LAO</td><td class="gold">~$610-613k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="yellow">keep for now</td></tr>
-        <tr><td class="yellow">🟡</td><td class="yellow"><strong>MD-88 ×1</strong></td><td>CLT→GOH→SVL</td><td class="gold">$436k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="yellow">bridge — replace next</td></tr>
-        <tr class="rgh"><td colspan="6">— 🔴 TIER 4: &lt;$400k/DAY — replace FIRST as slots open</td></tr>
-        <tr><td class="red">🔴</td><td class="red"><strong>Caravelle 12 ×2</strong></td><td>OGZ-AMD, CZM-BVB</td><td class="gold">$360-366k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
-        <tr><td class="red">🔴</td><td class="red"><strong>ERJ 190-200 ×6</strong></td><td>6 separate stopovers</td><td class="gold">~$267-282k ea</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
+        <tr class="rgh"><td colspan="6">— 🏆 TIER 1: $1M+/LEG — the target, already hit</td></tr>
+        <tr><td class="gold">🏆</td><td class="green"><strong>Il-96-400 ×11</strong></td><td>11 dedicated routes across CLT/DFW/LAX/LHR/ICN</td><td class="gold">~$1.01-1.11M</td><td><span class="tag tg">✅ ~11:30-11:48</span></td><td class="green">KEEP — only type clearing new goal</td></tr>
+        <tr class="rgh"><td colspan="6">— 🟢 TIER 2: $700k–999k/LEG — strong, keep flying</td></tr>
+        <tr><td class="green">🟢</td><td class="green"><strong>DC-10-10 ×3</strong></td><td>3 separate stopovers</td><td class="gold">$730-745k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="green">KEEP</td></tr>
+        <tr class="rgh"><td colspan="6">— 🔵 TIER 3: $500k–699k/LEG — solid, first to replace when a $1M+ plane needs the slot</td></tr>
+        <tr><td class="blue">🔵</td><td class="blue"><strong>B767-200ER ×1</strong></td><td>CLT→VPE (direct)</td><td class="gold">$690k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="blue">keep for now</td></tr>
+        <tr><td class="blue">🔵</td><td class="blue"><strong>B787-8 ×3</strong></td><td>DAD, VIL, PEM (direct)</td><td class="gold">$640-650k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="blue">keep for now</td></tr>
+        <tr><td class="blue">🔵</td><td class="blue"><strong>MC-21-400 ×4</strong></td><td>FAI-FKS, YQX-INZ ×3</td><td class="gold">$635k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="blue">keep for now</td></tr>
+        <tr><td class="blue">🔵</td><td class="blue"><strong>B757-200F ×1 (cargo)</strong></td><td>DFW→AKN→HIJ</td><td class="gold">$540k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="blue">keep — only cargo plane</td></tr>
+        <tr><td class="blue">🔵</td><td class="blue"><strong>B757-200 ×3</strong></td><td>3 separate stopovers</td><td class="gold">$520k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="blue">keep for now</td></tr>
+        <tr class="rgh"><td colspan="6">— 🔴 TIER 4: &lt;$500k/LEG — replace FIRST as slots open</td></tr>
+        <tr><td class="red">🔴</td><td class="red"><strong>B737 MAX9 ×1</strong></td><td>DFW→AKN→HIJ (stopover)</td><td class="gold">$499k</td><td><span class="tag tg">✅ 11:48</span></td><td class="red">borderline — $1k under Tier 3, bonus plane</td></tr>
+        <tr><td class="red">🔴</td><td class="red"><strong>A300B2-200 ×1</strong></td><td>CLT→CUM→GYN</td><td class="gold">$477k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
+        <tr><td class="red">🔴</td><td class="red"><strong>A320-200 ×2</strong></td><td>SCC-JMU, OMS-LAO</td><td class="gold">$433k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
+        <tr><td class="red">🔴</td><td class="red"><strong>B737-800 ×1</strong></td><td>CLT→BJL→ABJ</td><td class="gold">$400k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
+        <tr><td class="red">🔴</td><td class="red"><strong>MD-88 ×1</strong></td><td>CLT→GOH→SVL</td><td class="gold">$335k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
+        <tr><td class="red">🔴</td><td class="red"><strong>Caravelle 12 ×2</strong></td><td>OGZ-AMD, CZM-BVB</td><td class="gold">$250k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
+        <tr><td class="red">🔴</td><td class="red"><strong>ERJ 190-200 ×6</strong></td><td>6 separate stopovers</td><td class="gold">$175k</td><td><span class="tag tg">✅ ~11:45</span></td><td class="red">replace first</td></tr>
       </tbody>
     </table>
   </div>
