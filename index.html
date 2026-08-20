@@ -400,15 +400,15 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
 <div class="sl">🎪 Events Fleet — Limited-Time Routes</div>
 <div class="g1">
   <div class="card">
-    <div style="background:#0a1520;border:1px solid #1e3a52;border-radius:7px;padding:8px;margin-bottom:10px;font-size:0.68rem;color:#7a9bb5;">📐 <strong class="gold">Different mechanic from regular routes:</strong> events operate at full capacity until demand depletes — figures below use the bot's own numbers directly, not the ~90-95% discount applied elsewhere. Events last 3-7 days. Keep these planes grounded between events (don't let them auto-return to a hub) and rename them distinctly (e.g. "Evnts") so they don't get mixed into regular fleet management.</div>
+    <div style="background:#0a1520;border:1px solid #1e3a52;border-radius:7px;padding:8px;margin-bottom:10px;font-size:0.68rem;color:#7a9bb5;">📐 <strong class="gold">Different mechanic from regular routes:</strong> events operate at full capacity until demand depletes, with event-boosted pricing/demand the bot doesn't model. <strong class="red">The $ figures below are reference-only ballparks from a standard (non-event) bot search — not real projections.</strong> True event revenue will only be known once flown. Events last 3-7 days. Keep these planes grounded between events (don't let them auto-return to a hub) and rename them distinctly so they don't get mixed into regular fleet management.</div>
     <table>
-      <thead><tr><th>Tail</th><th>Aircraft</th><th>Route</th><th>Seat Config</th><th>Profit/Leg (full)</th><th>Notes</th></tr></thead>
+      <thead><tr><th>Tail</th><th>Aircraft</th><th>Route</th><th>Seat Config</th><th>Bot Ref. (not real)</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td>Events1</td><td>Il-96-400</td><td>RDU→NSI</td><td class="gold">Y97/J121/F32</td><td class="gold">$858,462</td><td class="blue">Business event · demand-proportional config, J-weighted · 2 A/C needed (1 slot open) · expires 2d 11h</td></tr>
-        <tr><td>Events2</td><td>Il-96-400</td><td>DAN→SJJ</td><td class="gold">Y150/J104/F26 <span class="muted" style="font-size:0.6rem;">(not 100% J — check config)</span></td><td class="gold">$703,253</td><td class="blue">Business event · direct, 8h48m · 2 A/C needed (1 slot open)</td></tr>
+        <tr><td>Events1</td><td>Il-96-400</td><td>RDU→NSI</td><td class="gold">Y97/J121/F32</td><td class="muted">$858,462 (ref. only)</td><td class="blue">Business event · 2 A/C needed (1 slot open) · expires 2d 11h · pending real flight data</td></tr>
+        <tr><td>Events2</td><td>Il-96-400</td><td>DAN→SJJ</td><td class="gold">Y0/J218/F0 (100% J, confirmed)</td><td class="muted">$703,253 (ref. only, wrong config)</td><td class="blue">Business event · direct, 8h48m · 2 A/C needed (1 slot open) · pending real flight data</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:8px;font-size:0.66rem;color:#5a8aaa;">Seat config uses the demand-proportional formula (same method as regular routes) — naturally concentrates on J since it's both the event-boosted class and highest demand. Adjust over time based on real bookings.</div>
+    <div style="margin-top:8px;font-size:0.66rem;color:#5a8aaa;">Seat configs use the demand-proportional formula or full-class concentration per the events guide. Real profit/leg will replace these reference figures once each plane completes its first flight.</div>
   </div>
 </div>
 
