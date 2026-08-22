@@ -404,8 +404,9 @@ footer { text-align:center; padding:14px; font-size:0.65rem; color:#2a4a62; bord
     <table>
       <thead><tr><th>Tail</th><th>Aircraft</th><th>Route</th><th>Seat Config</th><th>Bot Ref. (not real)</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td>Events1</td><td>Il-96-400</td><td>RDU→NSI</td><td class="gold">Y97/J121/F32</td><td class="muted">$858,462 (ref. only)</td><td class="blue">Business event · 2 A/C needed (1 slot open) · expires 2d 11h · pending real flight data</td></tr>
-        <tr><td>Events2</td><td>Il-96-400</td><td>DAN→SJJ</td><td class="gold">Y0/J218/F0 (100% J, confirmed)</td><td class="muted">$703,253 (ref. only, wrong config)</td><td class="blue">Business event · direct, 8h48m · 2 A/C needed (1 slot open) · pending real flight data</td></tr>
+        <tr><td>Events1-J</td><td>Il-96-400</td><td>RDU→NSI</td><td class="gold">Y97/J121/F32</td><td class="muted">$858,462 (ref. only)</td><td class="blue">Business event · 2 A/C needed (1 slot open) · pending real flight data</td></tr>
+        <tr><td>Events2-J</td><td>Il-96-400</td><td>DAN→SJJ</td><td class="gold">Y0/J218/F0 (100% J)</td><td class="muted">$703,253 (ref. only, wrong config — config now corrected)</td><td class="blue">Business event · direct, 8h48m · 2 A/C needed (1 slot open) · pending real flight data</td></tr>
+        <tr><td>Events3-F</td><td>Il-96-400</td><td>RDU→[stopover]→KWI</td><td class="gold">Y0/J0/F145 (100% F)</td><td class="muted">no bot data — route requires stopover, F is confirmed-boosted class (365→619 demand)</td><td class="blue">First event · 10,884km, exceeds Il-96 10,000km range direct · pending real flight data</td></tr>
       </tbody>
     </table>
     <div style="margin-top:8px;font-size:0.66rem;color:#5a8aaa;">Seat configs use the demand-proportional formula or full-class concentration per the events guide. Real profit/leg will replace these reference figures once each plane completes its first flight.</div>
